@@ -1,0 +1,119 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Uxntal",
+    "patterns": [
+        {
+            "name": "keyword.uxntal",
+            "match": "(?<!\\S)BRK(?!\\S)"
+        },
+        {
+            "name": "keyword.uxntal",
+            "match": "(?<!\\S)(LIT|INC|POP|DUP|NIP|SWP|OVR|ROT|EQU|NEQ|GTH|LTH|JMP|JCN|JSR|STH|LDZ|STZ|LDR|STR|LDA|STA|DEI|DEO|ADD|SUB|MUL|DIV|AND|ORA|EOR|SFT)[kr2]*(?!\\S)"
+        },
+        {
+            "name": "comment.uxntal",
+            "begin": "(?<!\\S)\\(\\S*",
+            "end": "(?<!\\S)\\)\\S*"
+        },
+        {
+            "match": "(?<!\\S)(#|\\||\\$)([0-9a-f]*)(?!\\S)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "2": {
+                    "name": "constant.numeric.uxntal"
+                }
+            }
+        },
+        {
+            "name": "constant.numeric.uxntal",
+            "match": "(?<!\\S)([0-9a-f]{2}|[0-9a-f]{4})(?!\\S)"
+        },
+        {
+            "match": "(?<!\\S)(')(\\S*)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "2": {
+                    "name": "constant.character.uxntal"
+                }
+            }
+        },
+        {
+            "match": "(?<!\\S)(\")(\\S*)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "2": {
+                    "name": "string.uxntal"
+                }
+            }
+        },
+        {
+            "match": "(?<!\\S)([\\.,:;]&)(\\S*)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "2": {
+                    "name": "entity.name.function.uxntal"
+                }
+            }
+        },
+        {
+            "match": "(?<!\\S)([\\.,:;])([^\\s/]*)(/?)(\\S*)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "2": {
+                    "name": "entity.name.function.uxntal"
+                },
+                "3": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "4": {
+                    "name": "entity.name.function.uxntal"
+                }
+            }
+        },
+        {
+            "match": "(?<!\\S)([@&])(\\S*)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "2": {
+                    "name": "entity.name.tag.uxntal"
+                }
+            }
+        },
+        {
+            "name": "punctuation.brackets.curly.uxntal",
+            "match": "(?<!\\S)[\\{\\}]\\S*"
+        },
+        {
+            "name": "punctuation.brackets.square.uxntal",
+            "match": "(?<!\\S)[\\[\\]]\\S*"
+        },
+        {
+            "match": "(?<!\\S)(\\%)(\\S*)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "2": {
+                    "name": "meta.preprocessor.uxntal"
+                }
+            }
+        },
+        {
+            "name": "variable.uxntal",
+            "match": "(?<!\\S)\\S+"
+        }
+    ],
+    "scopeName": "source.tal"
+}

@@ -1,0 +1,40 @@
+{
+    "name": "uxntal",
+    "displayName": "Uxntal",
+    "description": "Uxntal support for Visual Studio Code",
+    "icon": "./images/icon.png",
+    "version": "0.1.0",
+    "publisher": "karolbelina",
+    "repository": {
+        "url": "https://github.com/karolbelina/uxntal-vscode.git",
+        "type": "git"
+    },
+    "license": "MIT",
+    "keywords": [
+        "uxn",
+        "uxntal"
+    ],
+    "categories": [
+        "Programming Languages"
+    ],
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "uxntal",
+                "aliases": ["Uxntal", "uxntal"],
+                "extensions": [".tal"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "uxntal",
+                "scopeName": "source.tal",
+                "path": "./syntaxes/uxntal.tmLanguage.json"
+            }
+        ]
+    }
+}
