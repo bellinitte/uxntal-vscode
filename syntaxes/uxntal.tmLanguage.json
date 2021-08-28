@@ -3,6 +3,11 @@
     "name": "Uxntal",
     "patterns": [
         {
+            "name": "comment.uxntal",
+            "begin": "(?<!\\S)\\(\\S*",
+            "end": "(?<!\\S)\\)\\S*"
+        },
+        {
             "name": "keyword.uxntal",
             "match": "(?<!\\S)BRK(?!\\S)"
         },
@@ -11,9 +16,18 @@
             "match": "(?<!\\S)(LIT|INC|POP|DUP|NIP|SWP|OVR|ROT|EQU|NEQ|GTH|LTH|JMP|JCN|JSR|STH|LDZ|STZ|LDR|STR|LDA|STA|DEI|DEO|ADD|SUB|MUL|DIV|AND|ORA|EOR|SFT)[kr2]*(?!\\S)"
         },
         {
-            "name": "comment.uxntal",
-            "begin": "(?<!\\S)\\(\\S*",
-            "end": "(?<!\\S)\\)\\S*"
+            "begin": "(?<!\\S)(include)(?!\\S)",
+            "end": "(\\S+)",
+            "beginCaptures": {
+                "1": {
+                    "name": "keyword.uxntal"
+                }
+            },
+            "endCaptures": {
+                "1": {
+                    "name": "meta.preprocessor.string.uxntal"
+                }
+            }
         },
         {
             "match": "(?<!\\S)(#|\\||\\$)([0-9a-f]*)(?!\\S)",
