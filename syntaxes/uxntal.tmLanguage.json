@@ -30,7 +30,7 @@
             }
         },
         {
-            "match": "(?<!\\S)(#|\\||\\$)([0-9a-f]*)(?!\\S)",
+            "match": "(?<!\\S)(#|\\||\\$)(\\S*)",
             "captures": {
                 "1": {
                     "name": "punctuation.rune.uxntal"
