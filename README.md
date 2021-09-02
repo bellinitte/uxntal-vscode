@@ -4,7 +4,8 @@
 
 ## Preview
 
-![Preview](images/preview.png)
+![Preview](https://raw.githubusercontent.com/karolbelina/uxntal-vscode/main/images/preview.png?token=AGXVB6F2AWMAHXICESSBT53BHIFKO)
+
 _Theme: Gruvbox Dark Hard_
 
 ## License
