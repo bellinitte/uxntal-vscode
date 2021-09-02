@@ -2,7 +2,7 @@
     "name": "uxntal",
     "displayName": "Uxntal",
     "description": "Uxntal support for Visual Studio Code",
-    "icon": "./images/icon.png",
+    "icon": "images/icon.png",
     "version": "0.1.0",
     "publisher": "karolbelina",
     "repository": {
@@ -24,16 +24,21 @@
         "languages": [
             {
                 "id": "uxntal",
-                "aliases": ["Uxntal", "uxntal"],
-                "extensions": [".tal"],
-                "configuration": "./language-configuration.json"
+                "aliases": [
+                    "Uxntal",
+                    "uxntal"
+                ],
+                "extensions": [
+                    ".tal"
+                ],
+                "configuration": "language-configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "uxntal",
                 "scopeName": "source.tal",
-                "path": "./syntaxes/uxntal.tmLanguage.json"
+                "path": "syntaxes/uxntal.tmLanguage.json"
             }
         ]
     }
