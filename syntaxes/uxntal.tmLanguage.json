@@ -95,12 +95,29 @@
             }
         },
         {
-            "match": "(?<!\\S)([@&])(\\S*)",
+            "match": "(?<!\\S)(&)(\\S*)",
             "captures": {
                 "1": {
                     "name": "punctuation.rune.uxntal"
                 },
                 "2": {
+                    "name": "entity.name.tag.uxntal"
+                }
+            }
+        },
+        {
+            "match": "(?<!\\S)(@)([^\\s/]*)(/?)(\\S*)",
+            "captures": {
+                "1": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "2": {
+                    "name": "entity.name.tag.uxntal"
+                },
+                "3": {
+                    "name": "punctuation.rune.uxntal"
+                },
+                "4": {
                     "name": "entity.name.tag.uxntal"
                 }
             }
