@@ -123,11 +123,15 @@
             }
         },
         {
-            "name": "punctuation.brackets.curly.uxntal",
+            "name": "punctuation.parentheses.uxntal",
+            "match": "(?<!\\S)\\)\\S*"
+        },
+        {
+            "name": "punctuation.braces.uxntal",
             "match": "(?<!\\S)[\\{\\}]\\S*"
         },
         {
-            "name": "punctuation.brackets.square.uxntal",
+            "name": "punctuation.brackets.uxntal",
             "match": "(?<!\\S)[\\[\\]]\\S*"
         },
         {
