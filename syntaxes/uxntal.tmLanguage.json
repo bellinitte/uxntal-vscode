@@ -2,150 +2,181 @@
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
     "name": "Uxntal",
     "patterns": [
-        {
+        { "include": "#macroDefinitionRegion" },
+        { "include": "#commentRegion" },
+        { "include": "#generic" },
+        { "include": "#macro" }
+    ],
+    "repository": {
+        "comment": {
             "name": "comment.uxntal",
-            "begin": "(?<!\\S)\\(\\S*",
-            "end": "(?<!\\S)\\)\\S*"
+            "match": "(?<!\\S)\\S+"
         },
-        {
-            "name": "keyword.uxntal",
-            "match": "(?<!\\S)BRK(?!\\S)"
-        },
-        {
-            "name": "keyword.uxntal",
-            "match": "(?<!\\S)(LIT|INC|POP|DUP|NIP|SWP|OVR|ROT|EQU|NEQ|GTH|LTH|JMP|JCN|JSR|STH|LDZ|STZ|LDR|STR|LDA|STA|DEI|DEO|ADD|SUB|MUL|DIV|AND|ORA|EOR|SFT)[kr2]*(?!\\S)"
-        },
-        {
-            "match": "(?<!\\S)(~)(\\S*)",
+        "commentRegion": {
+            "begin": "(?<!\\S)(\\(\\S*)",
+            "end": "(?<!\\S)(\\))(?!\\S)",
             "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "2": {
-                    "name": "meta.preprocessor.string.uxntal"
-                }
-            }
+                "1": { "name": "comment.uxntal" }
+            },
+            "patterns": [
+                { "include": "#nestedCommentRegion" },
+                { "include": "#comment" }
+            ]
         },
-        {
-            "match": "(?<!\\S)(#|\\||\\$)(\\S*)",
+        "nestedCommentRegion": {
+            "begin": "(?<!\\S)(\\()(?!\\S)",
+            "end": "(?<!\\S)(\\))(?!\\S)",
             "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "2": {
-                    "name": "constant.numeric.uxntal"
-                }
-            }
+                "1": { "name": "comment.uxntal" }
+            },
+            "patterns": [
+                { "include": "#nestedCommentRegion" },
+                { "include": "#comment" }
+            ]
         },
-        {
-            "name": "constant.numeric.uxntal",
-            "match": "(?<!\\S)([0-9a-f]{2}|[0-9a-f]{4})(?!\\S)"
-        },
-        {
-            "match": "(?<!\\S)(')(\\S*)",
-            "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
+        "macroDefinitionRegion": {
+            "begin": "(?<!\\S)(\\%)(\\S*)",
+            "end": "(?<!\\S)(\\}\\S*)",
+            "beginCaptures": {
+                "1": { "name": "punctuation.rune.uxntal" },
+                "2": { "name": "meta.preprocessor.uxntal" }
+            },
+            "endCaptures": {
+                "1": { "name": "punctuation.braces.uxntal" }
+            },
+            "patterns": [
+                {
+                    "name": "punctuation.braces.uxntal",
+                    "match": "(?<!\\S)\\{\\S*"
                 },
-                "2": {
-                    "name": "constant.character.uxntal"
-                }
-            }
+                { "include": "#nestedMacroDefinitionHeader" },
+                { "include": "#macroDefinitionCommentRegion" },
+                { "include": "#generic" },
+                { "include": "#macro" }
+            ]
         },
-        {
-            "match": "(?<!\\S)(\")(\\S*)",
-            "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "2": {
-                    "name": "string.uxntal"
-                }
-            }
-        },
-        {
-            "match": "(?<!\\S)([\\.,:;]&)(\\S*)",
-            "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "2": {
-                    "name": "entity.name.function.uxntal"
-                }
-            }
-        },
-        {
-            "match": "(?<!\\S)([\\.,:;])([^\\s/]*)(/?)(\\S*)",
-            "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "2": {
-                    "name": "entity.name.function.uxntal"
-                },
-                "3": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "4": {
-                    "name": "entity.name.function.uxntal"
-                }
-            }
-        },
-        {
-            "match": "(?<!\\S)(&)(\\S*)",
-            "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "2": {
-                    "name": "entity.name.tag.uxntal"
-                }
-            }
-        },
-        {
-            "match": "(?<!\\S)(@)([^\\s/]*)(/?)(\\S*)",
-            "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "2": {
-                    "name": "entity.name.tag.uxntal"
-                },
-                "3": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "4": {
-                    "name": "entity.name.tag.uxntal"
-                }
-            }
-        },
-        {
-            "name": "punctuation.parentheses.uxntal",
-            "match": "(?<!\\S)\\)\\S*"
-        },
-        {
-            "name": "punctuation.braces.uxntal",
-            "match": "(?<!\\S)[\\{\\}]\\S*"
-        },
-        {
-            "name": "punctuation.brackets.uxntal",
-            "match": "(?<!\\S)[\\[\\]]\\S*"
-        },
-        {
+        "nestedMacroDefinitionHeader": {
             "match": "(?<!\\S)(\\%)(\\S*)",
             "captures": {
-                "1": {
-                    "name": "punctuation.rune.uxntal"
-                },
-                "2": {
-                    "name": "meta.preprocessor.uxntal"
-                }
+                "1": { "name": "punctuation.rune.uxntal" },
+                "2": { "name": "meta.preprocessor.uxntal" }
             }
         },
-        {
+        "macroDefinitionCommentRegion": {
+            "begin": "(?<!\\S)(\\(\\S*)",
+            "end": "(?<!\\S)(\\)(?!\\S)|(?=\\}))",
+            "captures": {
+                "1": { "name": "comment.uxntal" }
+            },
+            "patterns": [
+                { "include": "#nestedMacroDefinitionHeader" },
+                { "include": "#nestedMacroDefinitionCommentRegion" },
+                { "include": "#comment" }
+            ]
+        },
+        "nestedMacroDefinitionCommentRegion": {
+            "begin": "(?<!\\S)(\\()(?!\\S)",
+            "end": "(?<!\\S)(\\)(?!\\S)|(?=\\}))",
+            "captures": {
+                "1": { "name": "comment.uxntal" }
+            },
+            "patterns": [
+                { "include": "#nestedMacroDefinitionHeader" },
+                { "include": "#nestedMacroDefinitionCommentRegion" },
+                { "include": "#comment" }
+            ]
+        },
+        "macro": {
             "name": "variable.uxntal",
             "match": "(?<!\\S)\\S+"
+        },
+        "generic": {
+            "patterns": [
+                {
+                    "comment": "Include",
+                    "match": "(?<!\\S)(~)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "meta.preprocessor.string.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Pad",
+                    "match": "(?<!\\S)(\\||\\$)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "constant.numeric.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Label definition",
+                    "match": "(?<!\\S)(@)([^\\s/]*)(/?)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "entity.name.tag.uxntal" },
+                        "3": { "name": "punctuation.rune.uxntal" },
+                        "4": { "name": "entity.name.tag.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Sublabel definition",
+                    "match": "(?<!\\S)(&)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "entity.name.tag.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Literal hex",
+                    "match": "(?<!\\S)(#)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "constant.numeric.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Label reference",
+                    "match": "(?<!\\S)([\\.,:;])([^\\s/]*)(/?)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "entity.name.function.uxntal" },
+                        "3": { "name": "punctuation.rune.uxntal" },
+                        "4": { "name": "entity.name.function.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Sublabel reference",
+                    "match": "(?<!\\S)([\\.,:;]&)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "entity.name.function.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Raw string",
+                    "match": "(?<!\\S)(\")(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "string.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Brackets",
+                    "name": "punctuation.brackets.uxntal",
+                    "match": "(?<!\\S)[\\[\\]](?!\\S)"
+                },
+                {
+                    "comment": "Mnemonic",
+                    "name": "keyword.uxntal",
+                    "match": "(?<!\\S)(BRK|(LIT|INC|POP|DUP|NIP|SWP|OVR|ROT|EQU|NEQ|GTH|LTH|JMP|JCN|JSR|STH|LDZ|STZ|LDR|STR|LDA|STA|DEI|DEO|ADD|SUB|MUL|DIV|AND|ORA|EOR|SFT)[kr2]*)(?!\\S)"
+                },
+                {
+                    "comment": "Raw hex",
+                    "name": "constant.numeric.uxntal",
+                    "match": "(?<!\\S)([0-9a-f]{2}|[0-9a-f]{4})(?!\\S)"
+                }
+            ]
         }
-    ],
+    },
     "scopeName": "source.tal"
 }
