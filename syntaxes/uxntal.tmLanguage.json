@@ -136,7 +136,7 @@
                 },
                 {
                     "comment": "Label reference",
-                    "match": "(?<!\\S)([\\.,:;])([^\\s/]*)(/?)(\\S*)",
+                    "match": "(?<!\\S)([\\.,:;\\-=_])([^\\s/]*)(/?)(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "entity.name.function.uxntal" },
@@ -146,7 +146,7 @@
                 },
                 {
                     "comment": "Sublabel reference",
-                    "match": "(?<!\\S)([\\.,:;]&)(\\S*)",
+                    "match": "(?<!\\S)([\\.,:;\\-=_]&)(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "entity.name.function.uxntal" }

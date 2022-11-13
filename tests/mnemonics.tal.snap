@@ -38,28 +38,26 @@
 #                                           ^ source.tal
 #                                            ^ source.tal comment.uxntal
 >
->aBRK BRKa -BRK BRK- BRK-JMP JMP2kr2jr JMPa JMP- ( Almost-mnemonics )
+>aBRK BRKa BRK- BRK-JMP JMP2kr2jr JMPa JMP- ( Almost-mnemonics )
 #^^^^ source.tal variable.uxntal
 #    ^ source.tal
 #     ^^^^ source.tal variable.uxntal
 #         ^ source.tal
 #          ^^^^ source.tal variable.uxntal
 #              ^ source.tal
-#               ^^^^ source.tal variable.uxntal
-#                   ^ source.tal
-#                    ^^^^^^^ source.tal variable.uxntal
-#                           ^ source.tal
-#                            ^^^^^^^^^ source.tal variable.uxntal
+#               ^^^^^^^ source.tal variable.uxntal
+#                      ^ source.tal
+#                       ^^^^^^^^^ source.tal variable.uxntal
+#                                ^ source.tal
+#                                 ^^^^ source.tal variable.uxntal
 #                                     ^ source.tal
 #                                      ^^^^ source.tal variable.uxntal
 #                                          ^ source.tal
-#                                           ^^^^ source.tal variable.uxntal
-#                                               ^ source.tal
-#                                                ^ source.tal comment.uxntal
-#                                                 ^ source.tal
-#                                                  ^^^^^^^^^^^^^^^^ source.tal comment.uxntal
-#                                                                  ^ source.tal
-#                                                                   ^ source.tal comment.uxntal
+#                                           ^ source.tal comment.uxntal
+#                                            ^ source.tal
+#                                             ^^^^^^^^^^^^^^^^ source.tal comment.uxntal
+#                                                             ^ source.tal
+#                                                              ^ source.tal comment.uxntal
 >
 >( All base mnemonics )
 #^ source.tal comment.uxntal

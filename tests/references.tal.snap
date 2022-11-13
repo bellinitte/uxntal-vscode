@@ -22,6 +22,24 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.rune.uxntal
 #        ^^^^^^^^^ source.tal entity.name.function.uxntal
+>-label -&sublabel
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal entity.name.function.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.rune.uxntal
+#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+>=label =&sublabel
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal entity.name.function.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.rune.uxntal
+#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+>_label _&sublabel
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal entity.name.function.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.rune.uxntal
+#        ^^^^^^^^^ source.tal entity.name.function.uxntal
 >
 >.label-label
 #^ source.tal punctuation.rune.uxntal
