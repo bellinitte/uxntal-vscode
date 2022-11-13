@@ -1,0 +1,31 @@
+>"string
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^ source.tal string.uxntal
+>""
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal string.uxntal
+>"
+#^ source.tal punctuation.rune.uxntal
+>
+>~lib.tal
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^ source.tal meta.preprocessor.string.uxntal
+>~#abcD
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal meta.preprocessor.string.uxntal
+>~
+#^ source.tal punctuation.rune.uxntal
+>
+>'char ( Removed `'` rune )
+#^^^^^ source.tal variable.uxntal
+#     ^ source.tal
+#      ^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^^^^^^^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^^^ source.tal comment.uxntal
+#                   ^ source.tal
+#                    ^^^^ source.tal comment.uxntal
+#                        ^ source.tal
+#                         ^ source.tal comment.uxntal
+>

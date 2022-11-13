@@ -1,0 +1,261 @@
+>x ( x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^ source.tal comment.uxntal
+#   ^ source.tal
+#    ^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^ source.tal variable.uxntal
+>x (x x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^^ source.tal comment.uxntal
+#    ^ source.tal
+#     ^ source.tal comment.uxntal
+#      ^ source.tal
+#       ^ source.tal comment.uxntal
+#        ^ source.tal
+#         ^ source.tal variable.uxntal
+>x ( x )x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^ source.tal comment.uxntal
+#   ^ source.tal
+#    ^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^^ source.tal comment.uxntal
+#        ^ source.tal
+#         ^ source.tal comment.uxntal
+#          ^ source.tal
+#           ^ source.tal variable.uxntal
+>x (x) x )x()() x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^^^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^^^^^^ source.tal comment.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^ source.tal comment.uxntal
+#                  ^ source.tal
+#                   ^ source.tal variable.uxntal
+>x (x) x)X )x()() x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^^^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^^^ source.tal comment.uxntal
+#         ^ source.tal
+#          ^^^^^^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^ source.tal comment.uxntal
+#                  ^ source.tal
+#                   ^ source.tal comment.uxntal
+#                    ^ source.tal
+#                     ^ source.tal variable.uxntal
+>(
+#^ source.tal comment.uxntal
+>    BRK LIT2kr @label/label &sublabel
+#^^^^ source.tal
+#    ^^^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^^^^^^ source.tal comment.uxntal
+#              ^ source.tal
+#               ^^^^^^^^^^^^ source.tal comment.uxntal
+#                           ^ source.tal
+#                            ^^^^^^^^^ source.tal comment.uxntal
+>    .label #12 #abcd $1 |100 ~lib.tal
+#^^^^ source.tal
+#    ^^^^^^ source.tal comment.uxntal
+#          ^ source.tal
+#           ^^^ source.tal comment.uxntal
+#              ^ source.tal
+#               ^^^^^ source.tal comment.uxntal
+#                    ^ source.tal
+#                     ^^ source.tal comment.uxntal
+#                       ^ source.tal
+#                        ^^^^ source.tal comment.uxntal
+#                            ^ source.tal
+#                             ^^^^^^^^ source.tal comment.uxntal
+>    "string %MACRO { } [ ]
+#^^^^ source.tal
+#    ^^^^^^^ source.tal comment.uxntal
+#           ^ source.tal
+#            ^^^^^^ source.tal comment.uxntal
+#                  ^ source.tal
+#                   ^ source.tal comment.uxntal
+#                    ^ source.tal
+#                     ^ source.tal comment.uxntal
+#                      ^ source.tal
+#                       ^ source.tal comment.uxntal
+#                        ^ source.tal
+#                         ^ source.tal comment.uxntal
+>)
+#^ source.tal comment.uxntal
+>
+>X( x )X ) x
+#^^ source.tal variable.uxntal
+#  ^ source.tal
+#   ^ source.tal variable.uxntal
+#    ^ source.tal
+#     ^^ source.tal variable.uxntal
+#       ^ source.tal
+#        ^ source.tal variable.uxntal
+#         ^ source.tal
+#          ^ source.tal variable.uxntal
+>
+>( Nested comments )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^^^^ source.tal comment.uxntal
+#        ^ source.tal
+#         ^^^^^^^^ source.tal comment.uxntal
+#                 ^ source.tal
+#                  ^ source.tal comment.uxntal
+>x ( x ( x ) x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^ source.tal comment.uxntal
+#   ^ source.tal
+#    ^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^ source.tal comment.uxntal
+#         ^ source.tal
+#          ^ source.tal comment.uxntal
+#           ^ source.tal
+#            ^ source.tal comment.uxntal
+#             ^ source.tal
+#              ^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^ source.tal variable.uxntal
+>x (x x ( x ) x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^^ source.tal comment.uxntal
+#    ^ source.tal
+#     ^ source.tal comment.uxntal
+#      ^ source.tal
+#       ^ source.tal comment.uxntal
+#        ^ source.tal
+#         ^ source.tal comment.uxntal
+#          ^ source.tal
+#           ^ source.tal comment.uxntal
+#            ^ source.tal
+#             ^ source.tal comment.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^ source.tal variable.uxntal
+>x ( x ( x )x x ) x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^ source.tal comment.uxntal
+#   ^ source.tal
+#    ^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^ source.tal comment.uxntal
+#         ^ source.tal
+#          ^^ source.tal comment.uxntal
+#            ^ source.tal
+#             ^ source.tal comment.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^ source.tal comment.uxntal
+#                  ^ source.tal
+#                   ^ source.tal comment.uxntal
+#                    ^ source.tal
+#                     ^ source.tal variable.uxntal
+>x (x x ( x )x x ) x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^^ source.tal comment.uxntal
+#    ^ source.tal
+#     ^ source.tal comment.uxntal
+#      ^ source.tal
+#       ^ source.tal comment.uxntal
+#        ^ source.tal
+#         ^ source.tal comment.uxntal
+#          ^ source.tal
+#           ^^ source.tal comment.uxntal
+#             ^ source.tal
+#              ^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^ source.tal comment.uxntal
+#                 ^ source.tal
+#                  ^ source.tal comment.uxntal
+#                   ^ source.tal
+#                    ^ source.tal comment.uxntal
+#                     ^ source.tal
+#                      ^ source.tal variable.uxntal
+>
+>( Not nested -- inner comment doesn't start with a `(` )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^^^^^^ source.tal comment.uxntal
+#            ^ source.tal
+#             ^^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^^^^^ source.tal comment.uxntal
+#                     ^ source.tal
+#                      ^^^^^^^ source.tal comment.uxntal
+#                             ^ source.tal
+#                              ^^^^^^^ source.tal comment.uxntal
+#                                     ^ source.tal
+#                                      ^^^^^ source.tal comment.uxntal
+#                                           ^ source.tal
+#                                            ^^^^ source.tal comment.uxntal
+#                                                ^ source.tal
+#                                                 ^ source.tal comment.uxntal
+#                                                  ^ source.tal
+#                                                   ^^^ source.tal comment.uxntal
+#                                                      ^ source.tal
+#                                                       ^ source.tal comment.uxntal
+>x ( x (x x ) x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^ source.tal comment.uxntal
+#   ^ source.tal
+#    ^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^^ source.tal comment.uxntal
+#        ^ source.tal
+#         ^ source.tal comment.uxntal
+#          ^ source.tal
+#           ^ source.tal comment.uxntal
+#            ^ source.tal
+#             ^ source.tal variable.uxntal
+#              ^ source.tal
+#               ^ source.tal variable.uxntal
+#                ^ source.tal
+#                 ^ source.tal variable.uxntal
+>x (x x (x x ) x ) x
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^^ source.tal comment.uxntal
+#    ^ source.tal
+#     ^ source.tal comment.uxntal
+#      ^ source.tal
+#       ^^ source.tal comment.uxntal
+#         ^ source.tal
+#          ^ source.tal comment.uxntal
+#           ^ source.tal
+#            ^ source.tal comment.uxntal
+#             ^ source.tal
+#              ^ source.tal variable.uxntal
+#               ^ source.tal
+#                ^ source.tal variable.uxntal
+#                 ^ source.tal
+#                  ^ source.tal variable.uxntal
+>

@@ -1,0 +1,275 @@
+>%MACRO { }
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal meta.preprocessor.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.braces.uxntal
+#        ^ source.tal
+#         ^ source.tal punctuation.braces.uxntal
+>%! { }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal meta.preprocessor.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+#    ^ source.tal
+#     ^ source.tal punctuation.braces.uxntal
+>%@ { }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal meta.preprocessor.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+#    ^ source.tal
+#     ^ source.tal punctuation.braces.uxntal
+>%% { }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal meta.preprocessor.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+#    ^ source.tal
+#     ^ source.tal punctuation.braces.uxntal
+>% { }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal
+#  ^ source.tal punctuation.braces.uxntal
+#   ^ source.tal
+#    ^ source.tal punctuation.braces.uxntal
+>
+>( Braces )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^^^^ source.tal comment.uxntal
+#        ^ source.tal
+#         ^ source.tal comment.uxntal
+>%MACRO { }
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal meta.preprocessor.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.braces.uxntal
+#        ^ source.tal
+#         ^ source.tal punctuation.braces.uxntal
+>%MACRO{ }
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^ source.tal meta.preprocessor.uxntal
+#       ^ source.tal
+#        ^ source.tal punctuation.braces.uxntal
+>%MACRO{x }
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^ source.tal meta.preprocessor.uxntal
+#        ^ source.tal
+#         ^ source.tal punctuation.braces.uxntal
+>%MACRO{x }x
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^ source.tal meta.preprocessor.uxntal
+#        ^ source.tal
+#         ^^ source.tal punctuation.braces.uxntal
+>%MACRO { { { } ( Multiple opening braces are part of the definition )
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal meta.preprocessor.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.braces.uxntal
+#        ^ source.tal
+#         ^ source.tal punctuation.braces.uxntal
+#          ^ source.tal
+#           ^ source.tal punctuation.braces.uxntal
+#            ^ source.tal
+#             ^ source.tal punctuation.braces.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^^^^^^^^ source.tal comment.uxntal
+#                         ^ source.tal
+#                          ^^^^^^^ source.tal comment.uxntal
+#                                 ^ source.tal
+#                                  ^^^^^^ source.tal comment.uxntal
+#                                        ^ source.tal
+#                                         ^^^ source.tal comment.uxntal
+#                                            ^ source.tal
+#                                             ^^^^ source.tal comment.uxntal
+#                                                 ^ source.tal
+#                                                  ^^ source.tal comment.uxntal
+#                                                    ^ source.tal
+#                                                     ^^^ source.tal comment.uxntal
+#                                                        ^ source.tal
+#                                                         ^^^^^^^^^^ source.tal comment.uxntal
+#                                                                   ^ source.tal
+#                                                                    ^ source.tal comment.uxntal
+>%MACRO { } } } ( Only one closing brace is a part of the definition )
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal meta.preprocessor.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.braces.uxntal
+#        ^ source.tal
+#         ^ source.tal punctuation.braces.uxntal
+#          ^ source.tal
+#           ^ source.tal variable.uxntal
+#            ^ source.tal
+#             ^ source.tal variable.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^^^^ source.tal comment.uxntal
+#                     ^ source.tal
+#                      ^^^ source.tal comment.uxntal
+#                         ^ source.tal
+#                          ^^^^^^^ source.tal comment.uxntal
+#                                 ^ source.tal
+#                                  ^^^^^ source.tal comment.uxntal
+#                                       ^ source.tal
+#                                        ^^ source.tal comment.uxntal
+#                                          ^ source.tal
+#                                           ^ source.tal comment.uxntal
+#                                            ^ source.tal
+#                                             ^^^^ source.tal comment.uxntal
+#                                                 ^ source.tal
+#                                                  ^^ source.tal comment.uxntal
+#                                                    ^ source.tal
+#                                                     ^^^ source.tal comment.uxntal
+#                                                        ^ source.tal
+#                                                         ^^^^^^^^^^ source.tal comment.uxntal
+#                                                                   ^ source.tal
+#                                                                    ^ source.tal comment.uxntal
+>%MACRO { { } }
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal meta.preprocessor.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.braces.uxntal
+#        ^ source.tal
+#         ^ source.tal punctuation.braces.uxntal
+#          ^ source.tal
+#           ^ source.tal punctuation.braces.uxntal
+#            ^ source.tal
+#             ^ source.tal variable.uxntal
+>{ } ( Braces outside of a macro definition )
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^ source.tal variable.uxntal
+#   ^ source.tal
+#    ^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^^^^^^ source.tal comment.uxntal
+#            ^ source.tal
+#             ^^^^^^^ source.tal comment.uxntal
+#                    ^ source.tal
+#                     ^^ source.tal comment.uxntal
+#                       ^ source.tal
+#                        ^ source.tal comment.uxntal
+#                         ^ source.tal
+#                          ^^^^^ source.tal comment.uxntal
+#                               ^ source.tal
+#                                ^^^^^^^^^^ source.tal comment.uxntal
+#                                          ^ source.tal
+#                                           ^ source.tal comment.uxntal
+>x{ x}
+#^^ source.tal variable.uxntal
+#  ^ source.tal
+#   ^^ source.tal variable.uxntal
+>
+>%MACRO { x %NESTED { x } x } ( Last closing brace is not a part of the definition )
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal meta.preprocessor.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.braces.uxntal
+#        ^ source.tal
+#         ^ source.tal variable.uxntal
+#          ^ source.tal
+#           ^ source.tal punctuation.rune.uxntal
+#            ^^^^^^ source.tal meta.preprocessor.uxntal
+#                  ^ source.tal
+#                   ^ source.tal punctuation.braces.uxntal
+#                    ^ source.tal
+#                     ^ source.tal variable.uxntal
+#                      ^ source.tal
+#                       ^ source.tal punctuation.braces.uxntal
+#                        ^ source.tal
+#                         ^ source.tal variable.uxntal
+#                          ^ source.tal
+#                           ^ source.tal variable.uxntal
+#                            ^ source.tal
+#                             ^ source.tal comment.uxntal
+#                              ^ source.tal
+#                               ^^^^ source.tal comment.uxntal
+#                                   ^ source.tal
+#                                    ^^^^^^^ source.tal comment.uxntal
+#                                           ^ source.tal
+#                                            ^^^^^ source.tal comment.uxntal
+#                                                 ^ source.tal
+#                                                  ^^ source.tal comment.uxntal
+#                                                    ^ source.tal
+#                                                     ^^^ source.tal comment.uxntal
+#                                                        ^ source.tal
+#                                                         ^ source.tal comment.uxntal
+#                                                          ^ source.tal
+#                                                           ^^^^ source.tal comment.uxntal
+#                                                               ^ source.tal
+#                                                                ^^ source.tal comment.uxntal
+#                                                                  ^ source.tal
+#                                                                   ^^^ source.tal comment.uxntal
+#                                                                      ^ source.tal
+#                                                                       ^^^^^^^^^^ source.tal comment.uxntal
+#                                                                                 ^ source.tal
+#                                                                                  ^ source.tal comment.uxntal
+>
+>( Macro contents )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^^^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^^^^^^^^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^ source.tal comment.uxntal
+>%MACRO {
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal meta.preprocessor.uxntal
+#      ^ source.tal
+#       ^ source.tal punctuation.braces.uxntal
+>    BRK LIT2kr @label/label &sublabel
+#^^^^ source.tal
+#    ^^^ source.tal keyword.uxntal
+#       ^ source.tal
+#        ^^^^^^ source.tal keyword.uxntal
+#              ^ source.tal
+#               ^ source.tal punctuation.rune.uxntal
+#                ^^^^^ source.tal entity.name.tag.uxntal
+#                     ^ source.tal punctuation.rune.uxntal
+#                      ^^^^^ source.tal entity.name.tag.uxntal
+#                           ^ source.tal
+#                            ^ source.tal punctuation.rune.uxntal
+#                             ^^^^^^^^ source.tal entity.name.tag.uxntal
+>    .label #12 #abcd $1 |100 ~lib.tal
+#^^^^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^^^^ source.tal entity.name.function.uxntal
+#          ^ source.tal
+#           ^ source.tal punctuation.rune.uxntal
+#            ^^ source.tal constant.numeric.uxntal
+#              ^ source.tal
+#               ^ source.tal punctuation.rune.uxntal
+#                ^^^^ source.tal constant.numeric.uxntal
+#                    ^ source.tal
+#                     ^ source.tal punctuation.rune.uxntal
+#                      ^ source.tal constant.numeric.uxntal
+#                       ^ source.tal
+#                        ^ source.tal punctuation.rune.uxntal
+#                         ^^^ source.tal constant.numeric.uxntal
+#                            ^ source.tal
+#                             ^ source.tal punctuation.rune.uxntal
+#                              ^^^^^^^ source.tal meta.preprocessor.string.uxntal
+>    "string %MACRO ( comment ) [ ]
+#^^^^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^^^^^ source.tal string.uxntal
+#           ^ source.tal
+#            ^ source.tal punctuation.rune.uxntal
+#             ^^^^^ source.tal meta.preprocessor.uxntal
+#                  ^ source.tal
+#                   ^ source.tal comment.uxntal
+#                    ^ source.tal
+#                     ^^^^^^^ source.tal comment.uxntal
+#                            ^ source.tal
+#                             ^ source.tal comment.uxntal
+#                              ^ source.tal
+#                               ^ source.tal punctuation.brackets.uxntal
+#                                ^ source.tal
+#                                 ^ source.tal punctuation.brackets.uxntal
+>}
+#^ source.tal punctuation.braces.uxntal
+>

@@ -1,0 +1,178 @@
+>0 01 012 0123 01234 ( Length of a raw number must be 2 or 4 )
+#^ source.tal variable.uxntal
+# ^ source.tal
+#  ^^ source.tal constant.numeric.uxntal
+#    ^ source.tal
+#     ^^^ source.tal variable.uxntal
+#        ^ source.tal
+#         ^^^^ source.tal constant.numeric.uxntal
+#             ^ source.tal
+#              ^^^^^ source.tal variable.uxntal
+#                   ^ source.tal
+#                    ^ source.tal comment.uxntal
+#                     ^ source.tal
+#                      ^^^^^^ source.tal comment.uxntal
+#                            ^ source.tal
+#                             ^^ source.tal comment.uxntal
+#                               ^ source.tal
+#                                ^ source.tal comment.uxntal
+#                                 ^ source.tal
+#                                  ^^^ source.tal comment.uxntal
+#                                     ^ source.tal
+#                                      ^^^^^^ source.tal comment.uxntal
+#                                            ^ source.tal
+#                                             ^^^^ source.tal comment.uxntal
+#                                                 ^ source.tal
+#                                                  ^^ source.tal comment.uxntal
+#                                                    ^ source.tal
+#                                                     ^ source.tal comment.uxntal
+#                                                      ^ source.tal
+#                                                       ^^ source.tal comment.uxntal
+#                                                         ^ source.tal
+#                                                          ^ source.tal comment.uxntal
+#                                                           ^ source.tal
+#                                                            ^ source.tal comment.uxntal
+>ab aB Ab AB abcd abcD ABCD ( All digits of raw numbers must be lowercase )
+#^^ source.tal constant.numeric.uxntal
+#  ^ source.tal
+#   ^^ source.tal variable.uxntal
+#     ^ source.tal
+#      ^^ source.tal variable.uxntal
+#        ^ source.tal
+#         ^^ source.tal variable.uxntal
+#           ^ source.tal
+#            ^^^^ source.tal constant.numeric.uxntal
+#                ^ source.tal
+#                 ^^^^ source.tal variable.uxntal
+#                     ^ source.tal
+#                      ^^^^ source.tal variable.uxntal
+#                          ^ source.tal
+#                           ^ source.tal comment.uxntal
+#                            ^ source.tal
+#                             ^^^ source.tal comment.uxntal
+#                                ^ source.tal
+#                                 ^^^^^^ source.tal comment.uxntal
+#                                       ^ source.tal
+#                                        ^^ source.tal comment.uxntal
+#                                          ^ source.tal
+#                                           ^^^ source.tal comment.uxntal
+#                                              ^ source.tal
+#                                               ^^^^^^^ source.tal comment.uxntal
+#                                                      ^ source.tal
+#                                                       ^^^^ source.tal comment.uxntal
+#                                                           ^ source.tal
+#                                                            ^^ source.tal comment.uxntal
+#                                                              ^ source.tal
+#                                                               ^^^^^^^^^ source.tal comment.uxntal
+#                                                                        ^ source.tal
+#                                                                         ^ source.tal comment.uxntal
+>
+>#01 #abcd
+#^ source.tal punctuation.rune.uxntal
+# ^^ source.tal constant.numeric.uxntal
+#   ^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^^^ source.tal constant.numeric.uxntal
+>|01 |abcd
+#^ source.tal punctuation.rune.uxntal
+# ^^ source.tal constant.numeric.uxntal
+#   ^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^^^ source.tal constant.numeric.uxntal
+>$01 $abcd
+#^ source.tal punctuation.rune.uxntal
+# ^^ source.tal constant.numeric.uxntal
+#   ^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^^^ source.tal constant.numeric.uxntal
+>
+>( Runed numbers can be of any length )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^^^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^^^^^^^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^^^ source.tal comment.uxntal
+#                   ^ source.tal
+#                    ^^ source.tal comment.uxntal
+#                      ^ source.tal
+#                       ^^ source.tal comment.uxntal
+#                         ^ source.tal
+#                          ^^^ source.tal comment.uxntal
+#                             ^ source.tal
+#                              ^^^^^^ source.tal comment.uxntal
+#                                    ^ source.tal
+#                                     ^ source.tal comment.uxntal
+>#0 #012 #01234
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal constant.numeric.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.rune.uxntal
+#    ^^^ source.tal constant.numeric.uxntal
+#       ^ source.tal
+#        ^ source.tal punctuation.rune.uxntal
+#         ^^^^^ source.tal constant.numeric.uxntal
+>|0 |012 |01234
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal constant.numeric.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.rune.uxntal
+#    ^^^ source.tal constant.numeric.uxntal
+#       ^ source.tal
+#        ^ source.tal punctuation.rune.uxntal
+#         ^^^^^ source.tal constant.numeric.uxntal
+>$0 $012 $01234
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal constant.numeric.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.rune.uxntal
+#    ^^^ source.tal constant.numeric.uxntal
+#       ^ source.tal
+#        ^ source.tal punctuation.rune.uxntal
+#         ^^^^^ source.tal constant.numeric.uxntal
+>
+># | $
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal
+#  ^ source.tal punctuation.rune.uxntal
+#   ^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+>
+>( Runed numbers can have arbitrary "digits" )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^^^ source.tal comment.uxntal
+#       ^ source.tal
+#        ^^^^^^^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^^^ source.tal comment.uxntal
+#                   ^ source.tal
+#                    ^^^^ source.tal comment.uxntal
+#                        ^ source.tal
+#                         ^^^^^^^^^ source.tal comment.uxntal
+#                                  ^ source.tal
+#                                   ^^^^^^^^ source.tal comment.uxntal
+#                                           ^ source.tal
+#                                            ^ source.tal comment.uxntal
+>#x!@ ## 
+#^ source.tal punctuation.rune.uxntal
+# ^^^ source.tal constant.numeric.uxntal
+#    ^ source.tal
+#     ^ source.tal punctuation.rune.uxntal
+#      ^ source.tal constant.numeric.uxntal
+#       ^^ source.tal
+>|x!@ || 
+#^ source.tal punctuation.rune.uxntal
+# ^^^ source.tal constant.numeric.uxntal
+#    ^ source.tal
+#     ^ source.tal punctuation.rune.uxntal
+#      ^ source.tal constant.numeric.uxntal
+#       ^^ source.tal
+>$x!@ $$
+#^ source.tal punctuation.rune.uxntal
+# ^^^ source.tal constant.numeric.uxntal
+#    ^ source.tal
+#     ^ source.tal punctuation.rune.uxntal
+#      ^ source.tal constant.numeric.uxntal
+>

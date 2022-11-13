@@ -1,0 +1,72 @@
+>@label
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^ source.tal entity.name.tag.uxntal
+>&sublabel
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^^ source.tal entity.name.tag.uxntal
+>
+>@label-label
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^^^^^ source.tal entity.name.tag.uxntal
+>@label-la/bel ( `/` highlighted )
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^^ source.tal entity.name.tag.uxntal
+#         ^ source.tal punctuation.rune.uxntal
+#          ^^^ source.tal entity.name.tag.uxntal
+#             ^ source.tal
+#              ^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^^^ source.tal comment.uxntal
+#                   ^ source.tal
+#                    ^^^^^^^^^^^ source.tal comment.uxntal
+#                               ^ source.tal
+#                                ^ source.tal comment.uxntal
+>@la/bel-la/bel ( Second `/` not highlighted )
+#^ source.tal punctuation.rune.uxntal
+# ^^ source.tal entity.name.tag.uxntal
+#   ^ source.tal punctuation.rune.uxntal
+#    ^^^^^^^^^^ source.tal entity.name.tag.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^^^^^^ source.tal comment.uxntal
+#                       ^ source.tal
+#                        ^^^ source.tal comment.uxntal
+#                           ^ source.tal
+#                            ^^^ source.tal comment.uxntal
+#                               ^ source.tal
+#                                ^^^^^^^^^^^ source.tal comment.uxntal
+#                                           ^ source.tal
+#                                            ^ source.tal comment.uxntal
+>@
+#^ source.tal punctuation.rune.uxntal
+>@/
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.rune.uxntal
+>@//
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.rune.uxntal
+#  ^ source.tal entity.name.tag.uxntal
+>
+>&sublabel-sublabel
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^^^^^^^^^^^ source.tal entity.name.tag.uxntal
+>&sublabel-subla/bel ( `/` not highlighted )
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^^^^^^^^^^^^ source.tal entity.name.tag.uxntal
+#                   ^ source.tal
+#                    ^ source.tal comment.uxntal
+#                     ^ source.tal
+#                      ^^^ source.tal comment.uxntal
+#                         ^ source.tal
+#                          ^^^ source.tal comment.uxntal
+#                             ^ source.tal
+#                              ^^^^^^^^^^^ source.tal comment.uxntal
+#                                         ^ source.tal
+#                                          ^ source.tal comment.uxntal
+>&
+#^ source.tal punctuation.rune.uxntal
+>&/
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal entity.name.tag.uxntal
+>

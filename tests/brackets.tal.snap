@@ -1,0 +1,29 @@
+>[ #00 ]
+#^ source.tal punctuation.brackets.uxntal
+# ^ source.tal
+#  ^ source.tal punctuation.rune.uxntal
+#   ^^ source.tal constant.numeric.uxntal
+#     ^ source.tal
+#      ^ source.tal punctuation.brackets.uxntal
+>[[ #00 ]]
+#^^ source.tal variable.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.rune.uxntal
+#    ^^ source.tal constant.numeric.uxntal
+#      ^ source.tal
+#       ^^ source.tal variable.uxntal
+>[x #00 ]x
+#^^ source.tal variable.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.rune.uxntal
+#    ^^ source.tal constant.numeric.uxntal
+#      ^ source.tal
+#       ^^ source.tal variable.uxntal
+>x[x #00 x]x
+#^^^ source.tal variable.uxntal
+#   ^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^ source.tal constant.numeric.uxntal
+#       ^ source.tal
+#        ^^^ source.tal variable.uxntal
+>

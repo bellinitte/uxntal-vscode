@@ -1,0 +1,100 @@
+>%EMIT { #18 DEO }
+#^ source.tal punctuation.rune.uxntal
+# ^^^^ source.tal meta.preprocessor.uxntal
+#     ^ source.tal
+#      ^ source.tal punctuation.braces.uxntal
+#       ^ source.tal
+#        ^ source.tal punctuation.rune.uxntal
+#         ^^ source.tal constant.numeric.uxntal
+#           ^ source.tal
+#            ^^^ source.tal keyword.uxntal
+#               ^ source.tal
+#                ^ source.tal punctuation.braces.uxntal
+>%HALT { #010f DEO }
+#^ source.tal punctuation.rune.uxntal
+# ^^^^ source.tal meta.preprocessor.uxntal
+#     ^ source.tal
+#      ^ source.tal punctuation.braces.uxntal
+#       ^ source.tal
+#        ^ source.tal punctuation.rune.uxntal
+#         ^^^^ source.tal constant.numeric.uxntal
+#             ^ source.tal
+#              ^^^ source.tal keyword.uxntal
+#                 ^ source.tal
+#                  ^ source.tal punctuation.braces.uxntal
+>
+>( init )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^^ source.tal comment.uxntal
+#      ^ source.tal
+#       ^ source.tal comment.uxntal
+>
+>|0100 @program
+#^ source.tal punctuation.rune.uxntal
+# ^^^^ source.tal constant.numeric.uxntal
+#     ^ source.tal
+#      ^ source.tal punctuation.rune.uxntal
+#       ^^^^^^^ source.tal entity.name.tag.uxntal
+>
+>    ;hello-word
+#^^^^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^^^^^^^^^ source.tal entity.name.function.uxntal
+>
+>    &while
+#^^^^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^^^^ source.tal entity.name.tag.uxntal
+>        ( send ) LDAk EMIT
+#^^^^^^^^ source.tal
+#        ^ source.tal comment.uxntal
+#         ^ source.tal
+#          ^^^^ source.tal comment.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^^^^ source.tal keyword.uxntal
+#                     ^ source.tal
+#                      ^^^^ source.tal variable.uxntal
+>        ( loop ) INC2 LDAk ,&while JCN
+#^^^^^^^^ source.tal
+#        ^ source.tal comment.uxntal
+#         ^ source.tal
+#          ^^^^ source.tal comment.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^^^^ source.tal keyword.uxntal
+#                     ^ source.tal
+#                      ^^^^ source.tal keyword.uxntal
+#                          ^ source.tal
+#                           ^ source.tal punctuation.rune.uxntal
+#                            ^^^^^^ source.tal entity.name.function.uxntal
+#                                  ^ source.tal
+#                                   ^^^ source.tal keyword.uxntal
+>    POP2
+#^^^^ source.tal
+#    ^^^^ source.tal keyword.uxntal
+>
+>    HALT
+#^^^^ source.tal
+#    ^^^^ source.tal variable.uxntal
+>
+>BRK
+#^^^ source.tal keyword.uxntal
+>
+>@hello-word "Hello 20 "World! 00
+#^ source.tal punctuation.rune.uxntal
+# ^^^^^^^^^^ source.tal entity.name.tag.uxntal
+#           ^ source.tal
+#            ^ source.tal punctuation.rune.uxntal
+#             ^^^^^ source.tal string.uxntal
+#                  ^ source.tal
+#                   ^^ source.tal constant.numeric.uxntal
+#                     ^ source.tal
+#                      ^ source.tal punctuation.rune.uxntal
+#                       ^^^^^^ source.tal string.uxntal
+#                             ^ source.tal
+#                              ^^ source.tal constant.numeric.uxntal
+>

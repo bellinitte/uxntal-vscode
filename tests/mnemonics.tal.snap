@@ -1,0 +1,140 @@
+>BRK JMP JMP2 JMPk JMPr JMP2kr2kr ( Valid mnemonics )
+#^^^ source.tal keyword.uxntal
+#   ^ source.tal
+#    ^^^ source.tal keyword.uxntal
+#       ^ source.tal
+#        ^^^^ source.tal keyword.uxntal
+#            ^ source.tal
+#             ^^^^ source.tal keyword.uxntal
+#                 ^ source.tal
+#                  ^^^^ source.tal keyword.uxntal
+#                      ^ source.tal
+#                       ^^^^^^^^^ source.tal keyword.uxntal
+#                                ^ source.tal
+#                                 ^ source.tal comment.uxntal
+#                                  ^ source.tal
+#                                   ^^^^^ source.tal comment.uxntal
+#                                        ^ source.tal
+#                                         ^^^^^^^^^ source.tal comment.uxntal
+#                                                  ^ source.tal
+#                                                   ^ source.tal comment.uxntal
+>
+>BRK2 BRK2kr2kr ( BRK doesn't have any modes )
+#^^^^ source.tal variable.uxntal
+#    ^ source.tal
+#     ^^^^^^^^^ source.tal variable.uxntal
+#              ^ source.tal
+#               ^ source.tal comment.uxntal
+#                ^ source.tal
+#                 ^^^ source.tal comment.uxntal
+#                    ^ source.tal
+#                     ^^^^^^^ source.tal comment.uxntal
+#                            ^ source.tal
+#                             ^^^^ source.tal comment.uxntal
+#                                 ^ source.tal
+#                                  ^^^ source.tal comment.uxntal
+#                                     ^ source.tal
+#                                      ^^^^^ source.tal comment.uxntal
+#                                           ^ source.tal
+#                                            ^ source.tal comment.uxntal
+>
+>aBRK BRKa -BRK BRK- BRK-JMP JMP2kr2jr JMPa JMP- ( Almost-mnemonics )
+#^^^^ source.tal variable.uxntal
+#    ^ source.tal
+#     ^^^^ source.tal variable.uxntal
+#         ^ source.tal
+#          ^^^^ source.tal variable.uxntal
+#              ^ source.tal
+#               ^^^^ source.tal variable.uxntal
+#                   ^ source.tal
+#                    ^^^^^^^ source.tal variable.uxntal
+#                           ^ source.tal
+#                            ^^^^^^^^^ source.tal variable.uxntal
+#                                     ^ source.tal
+#                                      ^^^^ source.tal variable.uxntal
+#                                          ^ source.tal
+#                                           ^^^^ source.tal variable.uxntal
+#                                               ^ source.tal
+#                                                ^ source.tal comment.uxntal
+#                                                 ^ source.tal
+#                                                  ^^^^^^^^^^^^^^^^ source.tal comment.uxntal
+#                                                                  ^ source.tal
+#                                                                   ^ source.tal comment.uxntal
+>
+>( All base mnemonics )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^ source.tal comment.uxntal
+#     ^ source.tal
+#      ^^^^ source.tal comment.uxntal
+#          ^ source.tal
+#           ^^^^^^^^^ source.tal comment.uxntal
+#                    ^ source.tal
+#                     ^ source.tal comment.uxntal
+>BRK
+#^^^ source.tal keyword.uxntal
+>LIT INC POP NIP SWP ROT DUP OVR
+#^^^ source.tal keyword.uxntal
+#   ^ source.tal
+#    ^^^ source.tal keyword.uxntal
+#       ^ source.tal
+#        ^^^ source.tal keyword.uxntal
+#           ^ source.tal
+#            ^^^ source.tal keyword.uxntal
+#               ^ source.tal
+#                ^^^ source.tal keyword.uxntal
+#                   ^ source.tal
+#                    ^^^ source.tal keyword.uxntal
+#                       ^ source.tal
+#                        ^^^ source.tal keyword.uxntal
+#                           ^ source.tal
+#                            ^^^ source.tal keyword.uxntal
+>EQU NEQ GTH LTH JMP JCN JSR STH
+#^^^ source.tal keyword.uxntal
+#   ^ source.tal
+#    ^^^ source.tal keyword.uxntal
+#       ^ source.tal
+#        ^^^ source.tal keyword.uxntal
+#           ^ source.tal
+#            ^^^ source.tal keyword.uxntal
+#               ^ source.tal
+#                ^^^ source.tal keyword.uxntal
+#                   ^ source.tal
+#                    ^^^ source.tal keyword.uxntal
+#                       ^ source.tal
+#                        ^^^ source.tal keyword.uxntal
+#                           ^ source.tal
+#                            ^^^ source.tal keyword.uxntal
+>LDZ STZ LDR STR LDA STA DEI DEO
+#^^^ source.tal keyword.uxntal
+#   ^ source.tal
+#    ^^^ source.tal keyword.uxntal
+#       ^ source.tal
+#        ^^^ source.tal keyword.uxntal
+#           ^ source.tal
+#            ^^^ source.tal keyword.uxntal
+#               ^ source.tal
+#                ^^^ source.tal keyword.uxntal
+#                   ^ source.tal
+#                    ^^^ source.tal keyword.uxntal
+#                       ^ source.tal
+#                        ^^^ source.tal keyword.uxntal
+#                           ^ source.tal
+#                            ^^^ source.tal keyword.uxntal
+>ADD SUB MUL DIV AND ORA EOR SFT
+#^^^ source.tal keyword.uxntal
+#   ^ source.tal
+#    ^^^ source.tal keyword.uxntal
+#       ^ source.tal
+#        ^^^ source.tal keyword.uxntal
+#           ^ source.tal
+#            ^^^ source.tal keyword.uxntal
+#               ^ source.tal
+#                ^^^ source.tal keyword.uxntal
+#                   ^ source.tal
+#                    ^^^ source.tal keyword.uxntal
+#                       ^ source.tal
+#                        ^^^ source.tal keyword.uxntal
+#                           ^ source.tal
+#                            ^^^ source.tal keyword.uxntal
+>
