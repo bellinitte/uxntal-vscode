@@ -1,4 +1,5 @@
-.vscode/**
-.vscode-test/**
+.vscode/
+images/preview.png
+tests/
+.gitattributes
 .gitignore
-vsc-extension-quickstart.md
