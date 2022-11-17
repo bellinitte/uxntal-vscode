@@ -69,8 +69,8 @@
 #                     ^ source.tal
 #                      ^^^^ source.tal keyword.uxntal
 #                          ^ source.tal
-#                           ^ source.tal punctuation.rune.uxntal
-#                            ^^^^^^ source.tal entity.name.function.uxntal
+#                           ^^ source.tal punctuation.rune.uxntal
+#                             ^^^^^ source.tal entity.name.function.uxntal
 #                                  ^ source.tal
 #                                   ^^^ source.tal keyword.uxntal
 >    POP2

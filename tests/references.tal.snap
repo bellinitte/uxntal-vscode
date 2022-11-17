@@ -2,44 +2,44 @@
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal entity.name.function.uxntal
 #      ^ source.tal
-#       ^ source.tal punctuation.rune.uxntal
-#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+#       ^^ source.tal punctuation.rune.uxntal
+#         ^^^^^^^^ source.tal entity.name.function.uxntal
 >,label ,&sublabel
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal entity.name.function.uxntal
 #      ^ source.tal
-#       ^ source.tal punctuation.rune.uxntal
-#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+#       ^^ source.tal punctuation.rune.uxntal
+#         ^^^^^^^^ source.tal entity.name.function.uxntal
 >;label ;&sublabel
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal entity.name.function.uxntal
 #      ^ source.tal
-#       ^ source.tal punctuation.rune.uxntal
-#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+#       ^^ source.tal punctuation.rune.uxntal
+#         ^^^^^^^^ source.tal entity.name.function.uxntal
 >:label :&sublabel
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal entity.name.function.uxntal
 #      ^ source.tal
-#       ^ source.tal punctuation.rune.uxntal
-#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+#       ^^ source.tal punctuation.rune.uxntal
+#         ^^^^^^^^ source.tal entity.name.function.uxntal
 >-label -&sublabel
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal entity.name.function.uxntal
 #      ^ source.tal
-#       ^ source.tal punctuation.rune.uxntal
-#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+#       ^^ source.tal punctuation.rune.uxntal
+#         ^^^^^^^^ source.tal entity.name.function.uxntal
 >=label =&sublabel
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal entity.name.function.uxntal
 #      ^ source.tal
-#       ^ source.tal punctuation.rune.uxntal
-#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+#       ^^ source.tal punctuation.rune.uxntal
+#         ^^^^^^^^ source.tal entity.name.function.uxntal
 >_label _&sublabel
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal entity.name.function.uxntal
 #      ^ source.tal
-#       ^ source.tal punctuation.rune.uxntal
-#        ^^^^^^^^^ source.tal entity.name.function.uxntal
+#       ^^ source.tal punctuation.rune.uxntal
+#         ^^^^^^^^ source.tal entity.name.function.uxntal
 >
 >.label-label
 #^ source.tal punctuation.rune.uxntal
@@ -85,13 +85,11 @@
 #  ^ source.tal entity.name.function.uxntal
 >
 >.&sublabel-sublabel
-#^ source.tal punctuation.rune.uxntal
-# ^^^^^^^^^^^^^^^^^^ source.tal entity.name.function.uxntal
+#^^ source.tal punctuation.rune.uxntal
+#  ^^^^^^^^^^^^^^^^^ source.tal entity.name.function.uxntal
 >.&sublabel-subla/bel ( `/` not highlighted )
-#^ source.tal punctuation.rune.uxntal
-# ^^^^^^^^^^^^^^^ source.tal entity.name.function.uxntal
-#                ^ source.tal punctuation.rune.uxntal
-#                 ^^^ source.tal entity.name.function.uxntal
+#^^ source.tal punctuation.rune.uxntal
+#  ^^^^^^^^^^^^^^^^^^ source.tal entity.name.function.uxntal
 #                    ^ source.tal
 #                     ^ source.tal comment.uxntal
 #                      ^ source.tal
@@ -103,10 +101,8 @@
 #                                          ^ source.tal
 #                                           ^ source.tal comment.uxntal
 >.&
-#^ source.tal punctuation.rune.uxntal
-# ^ source.tal entity.name.function.uxntal
+#^^ source.tal punctuation.rune.uxntal
 >.&/
-#^ source.tal punctuation.rune.uxntal
-# ^ source.tal entity.name.function.uxntal
-#  ^ source.tal punctuation.rune.uxntal
+#^^ source.tal punctuation.rune.uxntal
+#  ^ source.tal entity.name.function.uxntal
 >
