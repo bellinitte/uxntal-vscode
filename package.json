@@ -31,7 +31,11 @@
                 "extensions": [
                     ".tal"
                 ],
-                "configuration": "language-configuration.json"
+                "configuration": "language-configuration.json",
+                "icon": {
+                    "light": "images/file_icon/light.svg",
+                    "dark": "images/file_icon/dark.svg"
+                }
             }
         ],
         "grammars": [
