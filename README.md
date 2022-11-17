@@ -4,9 +4,9 @@
 
 ## Preview
 
-![Preview](https://raw.githubusercontent.com/karolbelina/uxntal-vscode/main/images/preview.png?token=AGXVB6F2AWMAHXICESSBT53BHIFKO)
-
-_Theme: Gruvbox Dark Hard_
+![Preview](https://github.com/karolbelina/uxntal-vscode/blob/main/images/preview.png?raw=true)<br>
+<sub>Theme: Gruvbox Dark Medium</sub><br>
+<sup>Font: IBM Plex Mono</sup>
 
 ## Installing
 
