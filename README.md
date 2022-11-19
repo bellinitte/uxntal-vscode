@@ -12,6 +12,12 @@
 
 You can install the latest release from [the marketplace](https://marketplace.visualstudio.com/items?itemName=karolbelina.uxntal). The extension will be updated automatically as new versions become available.
 
+Alternatively, download a VSIX from the [releases](https://github.com/karolbelina/uxntal-vscode/releases) page and install the extension with the `Extensions: Install from VSIX` command within VS Code, or from the command line via:
+
+```console
+code --install-extension uxntal-0.2.0.vsix
+```
+
 ## Testing
 
 This extension uses [vscode-tmgrammar-test](https://github.com/PanAeon/vscode-tmgrammar-test) for testing. Check out its [Installation](https://github.com/PanAeon/vscode-tmgrammar-test#installation) section for tips on how to install it as a standalone command line tool.
