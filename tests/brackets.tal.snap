@@ -6,24 +6,24 @@
 #     ^ source.tal
 #      ^ source.tal punctuation.brackets.uxntal
 >[[ #00 ]]
-#^^ source.tal variable.uxntal
+#^^ source.tal entity.name.function.uxntal
 #  ^ source.tal
 #   ^ source.tal punctuation.rune.uxntal
 #    ^^ source.tal constant.numeric.uxntal
 #      ^ source.tal
-#       ^^ source.tal variable.uxntal
+#       ^^ source.tal entity.name.function.uxntal
 >[x #00 ]x
-#^^ source.tal variable.uxntal
+#^^ source.tal entity.name.function.uxntal
 #  ^ source.tal
 #   ^ source.tal punctuation.rune.uxntal
 #    ^^ source.tal constant.numeric.uxntal
 #      ^ source.tal
-#       ^^ source.tal variable.uxntal
+#       ^^ source.tal entity.name.function.uxntal
 >x[x #00 x]x
-#^^^ source.tal variable.uxntal
+#^^^ source.tal entity.name.function.uxntal
 #   ^ source.tal
 #    ^ source.tal punctuation.rune.uxntal
 #     ^^ source.tal constant.numeric.uxntal
 #       ^ source.tal
-#        ^^^ source.tal variable.uxntal
+#        ^^^ source.tal entity.name.function.uxntal
 >

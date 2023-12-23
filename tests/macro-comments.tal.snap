@@ -4,7 +4,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -12,7 +12,7 @@
 #              ^ source.tal
 #               ^ source.tal comment.uxntal
 #                ^ source.tal
-#                 ^ source.tal variable.uxntal
+#                 ^ source.tal entity.name.function.uxntal
 #                  ^ source.tal
 #                   ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (x x ) x }
@@ -21,7 +21,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -29,7 +29,7 @@
 #               ^ source.tal
 #                ^ source.tal comment.uxntal
 #                 ^ source.tal
-#                  ^ source.tal variable.uxntal
+#                  ^ source.tal entity.name.function.uxntal
 #                   ^ source.tal
 #                    ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (x x )x ) x }
@@ -38,7 +38,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -48,7 +48,7 @@
 #                  ^ source.tal
 #                   ^ source.tal comment.uxntal
 #                    ^ source.tal
-#                     ^ source.tal variable.uxntal
+#                     ^ source.tal entity.name.function.uxntal
 #                      ^ source.tal
 #                       ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (x) x )x()() x ) x }
@@ -57,7 +57,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^^ source.tal comment.uxntal
 #              ^ source.tal
@@ -69,7 +69,7 @@
 #                         ^ source.tal
 #                          ^ source.tal comment.uxntal
 #                           ^ source.tal
-#                            ^ source.tal variable.uxntal
+#                            ^ source.tal entity.name.function.uxntal
 #                             ^ source.tal
 #                              ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (x) x)X )x()() x ) x }
@@ -78,7 +78,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^^ source.tal comment.uxntal
 #              ^ source.tal
@@ -90,7 +90,7 @@
 #                           ^ source.tal
 #                            ^ source.tal comment.uxntal
 #                             ^ source.tal
-#                              ^ source.tal variable.uxntal
+#                              ^ source.tal entity.name.function.uxntal
 #                               ^ source.tal
 #                                ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (
@@ -99,7 +99,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 >    BRK LIT2kr @label/label &sublabel
@@ -134,7 +134,7 @@
 >) x }
 #^ source.tal comment.uxntal
 # ^ source.tal
-#  ^ source.tal variable.uxntal
+#  ^ source.tal entity.name.function.uxntal
 #   ^ source.tal
 #    ^ source.tal punctuation.braces.uxntal
 >
@@ -144,15 +144,15 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^^ source.tal variable.uxntal
+#         ^^ source.tal entity.name.function.uxntal
 #           ^ source.tal
-#            ^ source.tal variable.uxntal
+#            ^ source.tal entity.name.function.uxntal
 #             ^ source.tal
-#              ^^ source.tal variable.uxntal
+#              ^^ source.tal entity.name.function.uxntal
 #                ^ source.tal
-#                 ^ source.tal variable.uxntal
+#                 ^ source.tal entity.name.function.uxntal
 #                  ^ source.tal
-#                   ^ source.tal variable.uxntal
+#                   ^ source.tal entity.name.function.uxntal
 #                    ^ source.tal
 #                     ^ source.tal punctuation.braces.uxntal
 >
@@ -170,7 +170,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -186,7 +186,7 @@
 #                      ^ source.tal
 #                       ^ source.tal comment.uxntal
 #                        ^ source.tal
-#                         ^ source.tal variable.uxntal
+#                         ^ source.tal entity.name.function.uxntal
 #                          ^ source.tal
 #                           ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (x x ( x ) x ) x }
@@ -195,7 +195,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -211,7 +211,7 @@
 #                       ^ source.tal
 #                        ^ source.tal comment.uxntal
 #                         ^ source.tal
-#                          ^ source.tal variable.uxntal
+#                          ^ source.tal entity.name.function.uxntal
 #                           ^ source.tal
 #                            ^ source.tal punctuation.braces.uxntal
 >%MACRO { x ( x ( x )x x ) x ) x }
@@ -220,7 +220,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -240,7 +240,7 @@
 #                           ^ source.tal
 #                            ^ source.tal comment.uxntal
 #                             ^ source.tal
-#                              ^ source.tal variable.uxntal
+#                              ^ source.tal entity.name.function.uxntal
 #                               ^ source.tal
 #                                ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (x x ( x )x x ) x ) x }
@@ -249,7 +249,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -269,7 +269,7 @@
 #                            ^ source.tal
 #                             ^ source.tal comment.uxntal
 #                              ^ source.tal
-#                               ^ source.tal variable.uxntal
+#                               ^ source.tal entity.name.function.uxntal
 #                                ^ source.tal
 #                                 ^ source.tal punctuation.braces.uxntal
 >%MACRO { x ( x ( x ( x ) x ) x ) x }
@@ -278,7 +278,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -302,11 +302,11 @@
 #                              ^ source.tal
 #                               ^ source.tal comment.uxntal
 #                                ^ source.tal
-#                                 ^ source.tal variable.uxntal
+#                                 ^ source.tal entity.name.function.uxntal
 #                                  ^ source.tal
 #                                   ^ source.tal punctuation.braces.uxntal
 >
->( Not nested -- inner comment doesn't start with a `(` )
+>( Not nested -- inner comment has other characters after the `(` )
 #^ source.tal comment.uxntal
 # ^ source.tal
 #  ^^^ source.tal comment.uxntal
@@ -319,24 +319,26 @@
 #                     ^ source.tal
 #                      ^^^^^^^ source.tal comment.uxntal
 #                             ^ source.tal
-#                              ^^^^^^^ source.tal comment.uxntal
-#                                     ^ source.tal
-#                                      ^^^^^ source.tal comment.uxntal
-#                                           ^ source.tal
-#                                            ^^^^ source.tal comment.uxntal
-#                                                ^ source.tal
-#                                                 ^ source.tal comment.uxntal
+#                              ^^^ source.tal comment.uxntal
+#                                 ^ source.tal
+#                                  ^^^^^ source.tal comment.uxntal
+#                                       ^ source.tal
+#                                        ^^^^^^^^^^ source.tal comment.uxntal
 #                                                  ^ source.tal
-#                                                   ^^^ source.tal comment.uxntal
-#                                                      ^ source.tal
-#                                                       ^ source.tal comment.uxntal
+#                                                   ^^^^^ source.tal comment.uxntal
+#                                                        ^ source.tal
+#                                                         ^^^ source.tal comment.uxntal
+#                                                            ^ source.tal
+#                                                             ^^^ source.tal comment.uxntal
+#                                                                ^ source.tal
+#                                                                 ^ source.tal comment.uxntal
 >%MACRO { x ( x (x x ) x ) x }
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -348,11 +350,11 @@
 #                   ^ source.tal
 #                    ^ source.tal comment.uxntal
 #                     ^ source.tal
-#                      ^ source.tal variable.uxntal
+#                      ^ source.tal entity.name.function.uxntal
 #                       ^ source.tal
-#                        ^ source.tal variable.uxntal
+#                        ^ source.tal entity.name.function.uxntal
 #                         ^ source.tal
-#                          ^ source.tal variable.uxntal
+#                          ^ source.tal entity.name.function.uxntal
 #                           ^ source.tal
 #                            ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (x x (x x ) x ) x }
@@ -361,7 +363,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -373,11 +375,11 @@
 #                    ^ source.tal
 #                     ^ source.tal comment.uxntal
 #                      ^ source.tal
-#                       ^ source.tal variable.uxntal
+#                       ^ source.tal entity.name.function.uxntal
 #                        ^ source.tal
-#                         ^ source.tal variable.uxntal
+#                         ^ source.tal entity.name.function.uxntal
 #                          ^ source.tal
-#                           ^ source.tal variable.uxntal
+#                           ^ source.tal entity.name.function.uxntal
 #                            ^ source.tal
 #                             ^ source.tal punctuation.braces.uxntal
 >%MACRO { x (x x (x )x ) x } x
@@ -386,7 +388,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -398,18 +400,18 @@
 #                     ^ source.tal
 #                      ^ source.tal comment.uxntal
 #                       ^ source.tal
-#                        ^ source.tal variable.uxntal
+#                        ^ source.tal entity.name.function.uxntal
 #                         ^ source.tal
 #                          ^ source.tal punctuation.braces.uxntal
 #                           ^ source.tal
-#                            ^ source.tal variable.uxntal
+#                            ^ source.tal entity.name.function.uxntal
 >%MACRO { x (x x (x x ) x } x
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -421,11 +423,11 @@
 #                    ^ source.tal
 #                     ^ source.tal comment.uxntal
 #                      ^ source.tal
-#                       ^ source.tal variable.uxntal
+#                       ^ source.tal entity.name.function.uxntal
 #                        ^ source.tal
 #                         ^ source.tal punctuation.braces.uxntal
 #                          ^ source.tal
-#                           ^ source.tal variable.uxntal
+#                           ^ source.tal entity.name.function.uxntal
 >
 >( Unclosed comments )
 #^ source.tal comment.uxntal
@@ -441,7 +443,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -449,14 +451,14 @@
 #              ^ source.tal
 #               ^ source.tal punctuation.braces.uxntal
 #                ^ source.tal
-#                 ^ source.tal variable.uxntal
+#                 ^ source.tal entity.name.function.uxntal
 >%MACRO { x (x x } x
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -464,14 +466,14 @@
 #               ^ source.tal
 #                ^ source.tal punctuation.braces.uxntal
 #                 ^ source.tal
-#                  ^ source.tal variable.uxntal
+#                  ^ source.tal entity.name.function.uxntal
 >%MACRO { x (x ( x ) x } x
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^^ source.tal comment.uxntal
 #             ^ source.tal
@@ -485,7 +487,7 @@
 #                     ^ source.tal
 #                      ^ source.tal punctuation.braces.uxntal
 #                       ^ source.tal
-#                        ^ source.tal variable.uxntal
+#                        ^ source.tal entity.name.function.uxntal
 >
 >( Nested macros )
 #^ source.tal comment.uxntal
@@ -501,7 +503,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -514,11 +516,11 @@
 #                        ^ source.tal
 #                         ^ source.tal comment.uxntal
 #                          ^ source.tal
-#                           ^ source.tal variable.uxntal
+#                           ^ source.tal entity.name.function.uxntal
 #                            ^ source.tal
 #                             ^ source.tal punctuation.braces.uxntal
 #                              ^ source.tal
-#                               ^ source.tal variable.uxntal
+#                               ^ source.tal entity.name.function.uxntal
 #                                ^ source.tal
 #                                 ^ source.tal comment.uxntal
 #                                  ^ source.tal
@@ -539,7 +541,7 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -560,18 +562,18 @@
 #                                ^ source.tal
 #                                 ^ source.tal comment.uxntal
 #                                  ^ source.tal
-#                                   ^ source.tal variable.uxntal
+#                                   ^ source.tal entity.name.function.uxntal
 #                                    ^ source.tal
 #                                     ^ source.tal punctuation.braces.uxntal
 #                                      ^ source.tal
-#                                       ^ source.tal variable.uxntal
+#                                       ^ source.tal entity.name.function.uxntal
 >%MACRO { x ( x %NESTED { x } x
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal comment.uxntal
 #            ^ source.tal
@@ -586,7 +588,7 @@
 #                          ^ source.tal
 #                           ^ source.tal punctuation.braces.uxntal
 #                            ^ source.tal
-#                             ^ source.tal variable.uxntal
+#                             ^ source.tal entity.name.function.uxntal
 >
 >( Macros in comments )
 #^ source.tal comment.uxntal
@@ -599,7 +601,7 @@
 #                    ^ source.tal
 #                     ^ source.tal comment.uxntal
 >x ( x %MACRO { x } x ) x
-#^ source.tal variable.uxntal
+#^ source.tal entity.name.function.uxntal
 # ^ source.tal
 #  ^ source.tal comment.uxntal
 #   ^ source.tal
@@ -617,9 +619,9 @@
 #                    ^ source.tal
 #                     ^ source.tal comment.uxntal
 #                      ^ source.tal
-#                       ^ source.tal variable.uxntal
+#                       ^ source.tal entity.name.function.uxntal
 >x ( } ) x
-#^ source.tal variable.uxntal
+#^ source.tal entity.name.function.uxntal
 # ^ source.tal
 #  ^ source.tal comment.uxntal
 #   ^ source.tal
@@ -627,5 +629,5 @@
 #     ^ source.tal
 #      ^ source.tal comment.uxntal
 #       ^ source.tal
-#        ^ source.tal variable.uxntal
+#        ^ source.tal entity.name.function.uxntal
 >

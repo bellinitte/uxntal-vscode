@@ -20,9 +20,9 @@
 #                                                   ^ source.tal comment.uxntal
 >
 >BRK2 BRK2kr2kr ( BRK doesn't have any modes )
-#^^^^ source.tal variable.uxntal
+#^^^^ source.tal entity.name.function.uxntal
 #    ^ source.tal
-#     ^^^^^^^^^ source.tal variable.uxntal
+#     ^^^^^^^^^ source.tal entity.name.function.uxntal
 #              ^ source.tal
 #               ^ source.tal comment.uxntal
 #                ^ source.tal
@@ -39,19 +39,19 @@
 #                                            ^ source.tal comment.uxntal
 >
 >aBRK BRKa BRK- BRK-JMP JMP2kr2jr JMPa JMP- ( Almost-mnemonics )
-#^^^^ source.tal variable.uxntal
+#^^^^ source.tal entity.name.function.uxntal
 #    ^ source.tal
-#     ^^^^ source.tal variable.uxntal
+#     ^^^^ source.tal entity.name.function.uxntal
 #         ^ source.tal
-#          ^^^^ source.tal variable.uxntal
+#          ^^^^ source.tal entity.name.function.uxntal
 #              ^ source.tal
-#               ^^^^^^^ source.tal variable.uxntal
+#               ^^^^^^^ source.tal entity.name.function.uxntal
 #                      ^ source.tal
-#                       ^^^^^^^^^ source.tal variable.uxntal
+#                       ^^^^^^^^^ source.tal entity.name.function.uxntal
 #                                ^ source.tal
-#                                 ^^^^ source.tal variable.uxntal
+#                                 ^^^^ source.tal entity.name.function.uxntal
 #                                     ^ source.tal
-#                                      ^^^^ source.tal variable.uxntal
+#                                      ^^^^ source.tal entity.name.function.uxntal
 #                                          ^ source.tal
 #                                           ^ source.tal comment.uxntal
 #                                            ^ source.tal

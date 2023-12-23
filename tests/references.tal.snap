@@ -48,6 +48,42 @@
 #        ^ source.tal punctuation.rune.uxntal
 #         ^^^^^^^^ source.tal entity.name.function.uxntal
 >
+>label-label
+#^^^^^^^^^^^ source.tal entity.name.function.uxntal
+>label-la/bel ( `/` highlighted )
+#^^^^^^^^ source.tal entity.name.function.uxntal
+#        ^ source.tal punctuation.rune.uxntal
+#         ^^^ source.tal entity.name.function.uxntal
+#            ^ source.tal
+#             ^ source.tal comment.uxntal
+#              ^ source.tal
+#               ^^^ source.tal comment.uxntal
+#                  ^ source.tal
+#                   ^^^^^^^^^^^ source.tal comment.uxntal
+#                              ^ source.tal
+#                               ^ source.tal comment.uxntal
+>la/bel-la/bel ( Second `/` not highlighted )
+#^^ source.tal entity.name.function.uxntal
+#  ^ source.tal punctuation.rune.uxntal
+#   ^^^^^^^^^^ source.tal entity.name.function.uxntal
+#             ^ source.tal
+#              ^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^^^^^^ source.tal comment.uxntal
+#                      ^ source.tal
+#                       ^^^ source.tal comment.uxntal
+#                          ^ source.tal
+#                           ^^^ source.tal comment.uxntal
+#                              ^ source.tal
+#                               ^^^^^^^^^^^ source.tal comment.uxntal
+#                                          ^ source.tal
+#                                           ^ source.tal comment.uxntal
+>/
+#^ source.tal punctuation.rune.uxntal
+>//
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal entity.name.function.uxntal
+>
 >.label-label
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^^^^^^^ source.tal entity.name.function.uxntal

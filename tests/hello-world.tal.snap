@@ -56,7 +56,7 @@
 #                ^ source.tal
 #                 ^^^^ source.tal keyword.uxntal
 #                     ^ source.tal
-#                      ^^^^ source.tal variable.uxntal
+#                      ^^^^ source.tal entity.name.function.uxntal
 >        ( loop ) INC2 LDAk ,&while JCN
 #^^^^^^^^ source.tal
 #        ^ source.tal comment.uxntal
@@ -80,7 +80,7 @@
 >
 >    HALT
 #^^^^ source.tal
-#    ^^^^ source.tal variable.uxntal
+#    ^^^^ source.tal entity.name.function.uxntal
 >
 >BRK
 #^^^ source.tal keyword.uxntal

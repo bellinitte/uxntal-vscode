@@ -1,13 +1,13 @@
 >0 01 012 0123 01234 ( Length of a raw number must be 2 or 4 )
-#^ source.tal variable.uxntal
+#^ source.tal entity.name.function.uxntal
 # ^ source.tal
 #  ^^ source.tal constant.numeric.uxntal
 #    ^ source.tal
-#     ^^^ source.tal variable.uxntal
+#     ^^^ source.tal entity.name.function.uxntal
 #        ^ source.tal
 #         ^^^^ source.tal constant.numeric.uxntal
 #             ^ source.tal
-#              ^^^^^ source.tal variable.uxntal
+#              ^^^^^ source.tal entity.name.function.uxntal
 #                   ^ source.tal
 #                    ^ source.tal comment.uxntal
 #                     ^ source.tal
@@ -35,17 +35,17 @@
 >ab aB Ab AB abcd abcD ABCD ( All digits of raw numbers must be lowercase )
 #^^ source.tal constant.numeric.uxntal
 #  ^ source.tal
-#   ^^ source.tal variable.uxntal
+#   ^^ source.tal entity.name.function.uxntal
 #     ^ source.tal
-#      ^^ source.tal variable.uxntal
+#      ^^ source.tal entity.name.function.uxntal
 #        ^ source.tal
-#         ^^ source.tal variable.uxntal
+#         ^^ source.tal entity.name.function.uxntal
 #           ^ source.tal
 #            ^^^^ source.tal constant.numeric.uxntal
 #                ^ source.tal
-#                 ^^^^ source.tal variable.uxntal
+#                 ^^^^ source.tal entity.name.function.uxntal
 #                     ^ source.tal
-#                      ^^^^ source.tal variable.uxntal
+#                      ^^^^ source.tal entity.name.function.uxntal
 #                          ^ source.tal
 #                           ^ source.tal comment.uxntal
 #                            ^ source.tal

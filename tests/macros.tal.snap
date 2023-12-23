@@ -100,9 +100,9 @@
 #        ^ source.tal
 #         ^ source.tal punctuation.braces.uxntal
 #          ^ source.tal
-#           ^ source.tal variable.uxntal
+#           ^ source.tal entity.name.function.uxntal
 #            ^ source.tal
-#             ^ source.tal variable.uxntal
+#             ^ source.tal entity.name.function.uxntal
 #              ^ source.tal
 #               ^ source.tal comment.uxntal
 #                ^ source.tal
@@ -137,11 +137,11 @@
 #          ^ source.tal
 #           ^ source.tal punctuation.braces.uxntal
 #            ^ source.tal
-#             ^ source.tal variable.uxntal
+#             ^ source.tal entity.name.function.uxntal
 >{ } ( Braces outside of a macro definition )
-#^ source.tal variable.uxntal
+#^ source.tal entity.name.function.uxntal
 # ^ source.tal
-#  ^ source.tal variable.uxntal
+#  ^ source.tal entity.name.function.uxntal
 #   ^ source.tal
 #    ^ source.tal comment.uxntal
 #     ^ source.tal
@@ -159,9 +159,9 @@
 #                                          ^ source.tal
 #                                           ^ source.tal comment.uxntal
 >x{ x}
-#^^ source.tal variable.uxntal
+#^^ source.tal entity.name.function.uxntal
 #  ^ source.tal
-#   ^^ source.tal variable.uxntal
+#   ^^ source.tal entity.name.function.uxntal
 >
 >%MACRO { x %NESTED { x } x } ( Last closing brace is not a part of the definition )
 #^ source.tal punctuation.rune.uxntal
@@ -169,20 +169,20 @@
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
 #        ^ source.tal
-#         ^ source.tal variable.uxntal
+#         ^ source.tal entity.name.function.uxntal
 #          ^ source.tal
 #           ^ source.tal punctuation.rune.uxntal
 #            ^^^^^^ source.tal meta.preprocessor.uxntal
 #                  ^ source.tal
 #                   ^ source.tal punctuation.braces.uxntal
 #                    ^ source.tal
-#                     ^ source.tal variable.uxntal
+#                     ^ source.tal entity.name.function.uxntal
 #                      ^ source.tal
 #                       ^ source.tal punctuation.braces.uxntal
 #                        ^ source.tal
-#                         ^ source.tal variable.uxntal
+#                         ^ source.tal entity.name.function.uxntal
 #                          ^ source.tal
-#                           ^ source.tal variable.uxntal
+#                           ^ source.tal entity.name.function.uxntal
 #                            ^ source.tal
 #                             ^ source.tal comment.uxntal
 #                              ^ source.tal

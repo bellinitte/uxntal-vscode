@@ -4,8 +4,7 @@
     "patterns": [
         { "include": "#macroDefinitionRegion" },
         { "include": "#commentRegion" },
-        { "include": "#generic" },
-        { "include": "#macro" }
+        { "include": "#genericTokens" }
     ],
     "repository": {
         "comment": {
@@ -51,8 +50,7 @@
                 },
                 { "include": "#nestedMacroDefinitionHeader" },
                 { "include": "#macroDefinitionCommentRegion" },
-                { "include": "#generic" },
-                { "include": "#macro" }
+                { "include": "#genericTokens" }
             ]
         },
         "nestedMacroDefinitionHeader": {
@@ -86,11 +84,7 @@
                 { "include": "#comment" }
             ]
         },
-        "macro": {
-            "name": "variable.uxntal",
-            "match": "(?<!\\S)\\S+"
-        },
-        "generic": {
+        "genericTokens": {
             "patterns": [
                 {
                     "comment": "Include",
@@ -109,8 +103,16 @@
                     }
                 },
                 {
+                    "comment": "Sublabel definition",
+                    "match": "(?<!\\S)(&)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "entity.name.tag.uxntal" }
+                    }
+                },
+                {
                     "comment": "Label definition",
-                    "match": "(?<!\\S)(@)([^\\s/]*)(/?)(\\S*)",
+                    "match": "(?<!\\S)(@)([^\\s/]*)(/)(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "entity.name.tag.uxntal" },
@@ -119,8 +121,8 @@
                     }
                 },
                 {
-                    "comment": "Sublabel definition",
-                    "match": "(?<!\\S)(&)(\\S*)",
+                    "comment": "Label definition",
+                    "match": "(?<!\\S)(@)(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "entity.name.tag.uxntal" }
@@ -135,8 +137,17 @@
                     }
                 },
                 {
+                    "comment": "Sublabel reference",
+                    "match": "(?<!\\S)([\\.,:;\\-=_])(&)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "punctuation.rune.uxntal" },
+                        "3": { "name": "entity.name.function.uxntal" }
+                    }
+                },
+                {
                     "comment": "Label reference",
-                    "match": "(?<!\\S)([\\.,:;\\-=_](?!&))([^\\s/]*)(/?)(\\S*)",
+                    "match": "(?<!\\S)([\\.,:;\\-=_])([^\\s/]*)(/)(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "entity.name.function.uxntal" },
@@ -145,12 +156,11 @@
                     }
                 },
                 {
-                    "comment": "Sublabel reference",
-                    "match": "(?<!\\S)([\\.,:;\\-=_])(&)(\\S*)",
+                    "comment": "Label reference",
+                    "match": "(?<!\\S)([\\.,:;\\-=_])(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
-                        "2": { "name": "punctuation.rune.uxntal" },
-                        "3": { "name": "entity.name.function.uxntal" }
+                        "2": { "name": "entity.name.function.uxntal" }
                     }
                 },
                 {
@@ -175,6 +185,22 @@
                     "comment": "Raw hex",
                     "name": "constant.numeric.uxntal",
                     "match": "(?<!\\S)([0-9a-f]{2}|[0-9a-f]{4})(?!\\S)"
+                },
+                {
+                    "comment": "Label reference",
+                    "match": "(?<!\\S)([^\\s/]*)(/)(\\S*)",
+                    "captures": {
+                        "1": { "name": "entity.name.function.uxntal" },
+                        "2": { "name": "punctuation.rune.uxntal" },
+                        "3": { "name": "entity.name.function.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Label reference",
+                    "match": "(?<!\\S)(\\S+)",
+                    "captures": {
+                        "1": { "name": "entity.name.function.uxntal" }
+                    }
                 }
             ]
         }
