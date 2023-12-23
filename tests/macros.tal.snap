@@ -61,7 +61,7 @@
 # ^^^^^^^ source.tal meta.preprocessor.uxntal
 #        ^ source.tal
 #         ^^ source.tal punctuation.braces.uxntal
->%MACRO { { { } ( Multiple opening braces are part of the definition )
+>%MACRO { { { }
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
@@ -72,27 +72,7 @@
 #           ^ source.tal punctuation.braces.uxntal
 #            ^ source.tal
 #             ^ source.tal punctuation.braces.uxntal
-#              ^ source.tal
-#               ^ source.tal comment.uxntal
-#                ^ source.tal
-#                 ^^^^^^^^ source.tal comment.uxntal
-#                         ^ source.tal
-#                          ^^^^^^^ source.tal comment.uxntal
-#                                 ^ source.tal
-#                                  ^^^^^^ source.tal comment.uxntal
-#                                        ^ source.tal
-#                                         ^^^ source.tal comment.uxntal
-#                                            ^ source.tal
-#                                             ^^^^ source.tal comment.uxntal
-#                                                 ^ source.tal
-#                                                  ^^ source.tal comment.uxntal
-#                                                    ^ source.tal
-#                                                     ^^^ source.tal comment.uxntal
-#                                                        ^ source.tal
-#                                                         ^^^^^^^^^^ source.tal comment.uxntal
-#                                                                   ^ source.tal
-#                                                                    ^ source.tal comment.uxntal
->%MACRO { } } } ( Only one closing brace is a part of the definition )
+>%MACRO { } } }
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
@@ -100,33 +80,9 @@
 #        ^ source.tal
 #         ^ source.tal punctuation.braces.uxntal
 #          ^ source.tal
-#           ^ source.tal entity.name.function.uxntal
+#           ^ source.tal punctuation.braces.uxntal
 #            ^ source.tal
-#             ^ source.tal entity.name.function.uxntal
-#              ^ source.tal
-#               ^ source.tal comment.uxntal
-#                ^ source.tal
-#                 ^^^^ source.tal comment.uxntal
-#                     ^ source.tal
-#                      ^^^ source.tal comment.uxntal
-#                         ^ source.tal
-#                          ^^^^^^^ source.tal comment.uxntal
-#                                 ^ source.tal
-#                                  ^^^^^ source.tal comment.uxntal
-#                                       ^ source.tal
-#                                        ^^ source.tal comment.uxntal
-#                                          ^ source.tal
-#                                           ^ source.tal comment.uxntal
-#                                            ^ source.tal
-#                                             ^^^^ source.tal comment.uxntal
-#                                                 ^ source.tal
-#                                                  ^^ source.tal comment.uxntal
-#                                                    ^ source.tal
-#                                                     ^^^ source.tal comment.uxntal
-#                                                        ^ source.tal
-#                                                         ^^^^^^^^^^ source.tal comment.uxntal
-#                                                                   ^ source.tal
-#                                                                    ^ source.tal comment.uxntal
+#             ^ source.tal punctuation.braces.uxntal
 >%MACRO { { } }
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
@@ -137,33 +93,9 @@
 #          ^ source.tal
 #           ^ source.tal punctuation.braces.uxntal
 #            ^ source.tal
-#             ^ source.tal entity.name.function.uxntal
->{ } ( Braces outside of a macro definition )
-#^ source.tal entity.name.function.uxntal
-# ^ source.tal
-#  ^ source.tal entity.name.function.uxntal
-#   ^ source.tal
-#    ^ source.tal comment.uxntal
-#     ^ source.tal
-#      ^^^^^^ source.tal comment.uxntal
-#            ^ source.tal
-#             ^^^^^^^ source.tal comment.uxntal
-#                    ^ source.tal
-#                     ^^ source.tal comment.uxntal
-#                       ^ source.tal
-#                        ^ source.tal comment.uxntal
-#                         ^ source.tal
-#                          ^^^^^ source.tal comment.uxntal
-#                               ^ source.tal
-#                                ^^^^^^^^^^ source.tal comment.uxntal
-#                                          ^ source.tal
-#                                           ^ source.tal comment.uxntal
->x{ x}
-#^^ source.tal entity.name.function.uxntal
-#  ^ source.tal
-#   ^^ source.tal entity.name.function.uxntal
+#             ^ source.tal punctuation.braces.uxntal
 >
->%MACRO { x %NESTED { x } x } ( Last closing brace is not a part of the definition )
+>%MACRO { x %NESTED { x } x }
 #^ source.tal punctuation.rune.uxntal
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
@@ -182,31 +114,7 @@
 #                        ^ source.tal
 #                         ^ source.tal entity.name.function.uxntal
 #                          ^ source.tal
-#                           ^ source.tal entity.name.function.uxntal
-#                            ^ source.tal
-#                             ^ source.tal comment.uxntal
-#                              ^ source.tal
-#                               ^^^^ source.tal comment.uxntal
-#                                   ^ source.tal
-#                                    ^^^^^^^ source.tal comment.uxntal
-#                                           ^ source.tal
-#                                            ^^^^^ source.tal comment.uxntal
-#                                                 ^ source.tal
-#                                                  ^^ source.tal comment.uxntal
-#                                                    ^ source.tal
-#                                                     ^^^ source.tal comment.uxntal
-#                                                        ^ source.tal
-#                                                         ^ source.tal comment.uxntal
-#                                                          ^ source.tal
-#                                                           ^^^^ source.tal comment.uxntal
-#                                                               ^ source.tal
-#                                                                ^^ source.tal comment.uxntal
-#                                                                  ^ source.tal
-#                                                                   ^^^ source.tal comment.uxntal
-#                                                                      ^ source.tal
-#                                                                       ^^^^^^^^^^ source.tal comment.uxntal
-#                                                                                 ^ source.tal
-#                                                                                  ^ source.tal comment.uxntal
+#                           ^ source.tal punctuation.braces.uxntal
 >
 >( Macro contents )
 #^ source.tal comment.uxntal
