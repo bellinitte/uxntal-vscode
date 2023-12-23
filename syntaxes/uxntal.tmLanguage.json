@@ -138,7 +138,7 @@
                 },
                 {
                     "comment": "Sublabel reference",
-                    "match": "(?<!\\S)([\\.,:;\\-=_])(&)(\\S*)",
+                    "match": "(?<!\\S)([\\.,:;\\-=_!?])(&)(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "punctuation.rune.uxntal" },
@@ -147,7 +147,7 @@
                 },
                 {
                     "comment": "Label reference",
-                    "match": "(?<!\\S)([\\.,:;\\-=_])([^\\s/]*)(/)(\\S*)",
+                    "match": "(?<!\\S)([\\.,:;\\-=_!?])([^\\s/]*)(/)(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "entity.name.function.uxntal" },
@@ -157,7 +157,7 @@
                 },
                 {
                     "comment": "Label reference",
-                    "match": "(?<!\\S)([\\.,:;\\-=_])(\\S*)",
+                    "match": "(?<!\\S)([\\.,:;\\-=_!?])(\\S*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "entity.name.function.uxntal" }
