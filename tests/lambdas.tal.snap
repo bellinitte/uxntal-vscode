@@ -1,0 +1,73 @@
+>{ }
+#^ source.tal punctuation.braces.uxntal
+# ^ source.tal
+#  ^ source.tal punctuation.braces.uxntal
+>.{ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>,{ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>;{ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>:{ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>-{ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>={ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>_{ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>!{ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>?{ }
+#^ source.tal punctuation.rune.uxntal
+# ^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal punctuation.braces.uxntal
+>
+>{ x } x
+#^ source.tal punctuation.braces.uxntal
+# ^ source.tal
+#  ^ source.tal entity.name.function.uxntal
+#   ^ source.tal
+#    ^ source.tal punctuation.braces.uxntal
+#     ^ source.tal
+#      ^ source.tal entity.name.function.uxntal
+>{x x }x x
+#^^ source.tal punctuation.braces.uxntal
+#  ^ source.tal
+#   ^ source.tal entity.name.function.uxntal
+#    ^ source.tal
+#     ^^ source.tal punctuation.braces.uxntal
+#       ^ source.tal
+#        ^ source.tal entity.name.function.uxntal
+>x{ x} x
+#^^ source.tal entity.name.function.uxntal
+#  ^ source.tal
+#   ^^ source.tal entity.name.function.uxntal
+#     ^ source.tal
+#      ^ source.tal entity.name.function.uxntal
+>

@@ -44,10 +44,6 @@
                 "1": { "name": "punctuation.braces.uxntal" }
             },
             "patterns": [
-                {
-                    "name": "punctuation.braces.uxntal",
-                    "match": "(?<!\\S)\\{\\S*"
-                },
                 { "include": "#nestedMacroDefinitionHeader" },
                 { "include": "#macroDefinitionCommentRegion" },
                 { "include": "#genericTokens" }
@@ -137,6 +133,14 @@
                     }
                 },
                 {
+                    "comment": "Anonymous label",
+                    "match": "(?<!\\S)([\\.,:;\\-=_!?])(\\{\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "punctuation.braces.uxntal" }
+                    }
+                },
+                {
                     "comment": "Sublabel reference",
                     "match": "(?<!\\S)([\\.,:;\\-=_!?])(&)(\\S*)",
                     "captures": {
@@ -175,6 +179,11 @@
                     "comment": "Brackets",
                     "name": "punctuation.brackets.uxntal",
                     "match": "(?<!\\S)[\\[\\]](?!\\S)"
+                },
+                {
+                    "comment": "Braces",
+                    "name": "punctuation.braces.uxntal",
+                    "match": "(?<!\\S)[\\{\\}]\\S*"
                 },
                 {
                     "comment": "Mnemonic",
