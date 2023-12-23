@@ -17,7 +17,7 @@
 #^ source.tal punctuation.rune.uxntal
 >
 >'char ( Removed `'` rune )
-#^^^^^ source.tal variable.uxntal
+#^^^^^ source.tal entity.name.function.uxntal
 #     ^ source.tal
 #      ^ source.tal comment.uxntal
 #       ^ source.tal
