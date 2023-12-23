@@ -129,7 +129,7 @@
 # ^^^^^ source.tal meta.preprocessor.uxntal
 #      ^ source.tal
 #       ^ source.tal punctuation.braces.uxntal
->    BRK LIT2kr @label/label &sublabel
+>    BRK ADD2kr @label/label &sublabel
 #^^^^ source.tal
 #    ^^^ source.tal keyword.uxntal
 #       ^ source.tal

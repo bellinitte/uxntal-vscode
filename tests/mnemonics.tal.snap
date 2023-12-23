@@ -51,6 +51,8 @@
 #     ^^^^ source.tal entity.name.function.uxntal
 #         ^ source.tal
 #          ^^^^ source.tal entity.name.function.uxntal
+>LITk
+#^^^^ source.tal entity.name.function.uxntal
 >
 >aBRK BRKa BRK- BRK-JMP JMP2kr2jr JMPa JMP- ( Almost-mnemonics )
 #^^^^ source.tal entity.name.function.uxntal
