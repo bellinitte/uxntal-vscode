@@ -19,24 +19,38 @@
 #                                                  ^ source.tal
 #                                                   ^ source.tal comment.uxntal
 >
->BRK2 BRK2kr2kr ( BRK doesn't have any modes )
+>( Invalid modes )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^^^^^ source.tal comment.uxntal
+#         ^ source.tal
+#          ^^^^^ source.tal comment.uxntal
+#               ^ source.tal
+#                ^ source.tal comment.uxntal
+>BRK2 BRKk BRKr
 #^^^^ source.tal entity.name.function.uxntal
 #    ^ source.tal
-#     ^^^^^^^^^ source.tal entity.name.function.uxntal
-#              ^ source.tal
-#               ^ source.tal comment.uxntal
-#                ^ source.tal
-#                 ^^^ source.tal comment.uxntal
-#                    ^ source.tal
-#                     ^^^^^^^ source.tal comment.uxntal
-#                            ^ source.tal
-#                             ^^^^ source.tal comment.uxntal
-#                                 ^ source.tal
-#                                  ^^^ source.tal comment.uxntal
-#                                     ^ source.tal
-#                                      ^^^^^ source.tal comment.uxntal
-#                                           ^ source.tal
-#                                            ^ source.tal comment.uxntal
+#     ^^^^ source.tal entity.name.function.uxntal
+#         ^ source.tal
+#          ^^^^ source.tal entity.name.function.uxntal
+>JCI2 JCIk JCIr
+#^^^^ source.tal entity.name.function.uxntal
+#    ^ source.tal
+#     ^^^^ source.tal entity.name.function.uxntal
+#         ^ source.tal
+#          ^^^^ source.tal entity.name.function.uxntal
+>JMI2 JMIk JMIr
+#^^^^ source.tal entity.name.function.uxntal
+#    ^ source.tal
+#     ^^^^ source.tal entity.name.function.uxntal
+#         ^ source.tal
+#          ^^^^ source.tal entity.name.function.uxntal
+>JSI2 JSIk JSIr
+#^^^^ source.tal entity.name.function.uxntal
+#    ^ source.tal
+#     ^^^^ source.tal entity.name.function.uxntal
+#         ^ source.tal
+#          ^^^^ source.tal entity.name.function.uxntal
 >
 >aBRK BRKa BRK- BRK-JMP JMP2kr2jr JMPa JMP- ( Almost-mnemonics )
 #^^^^ source.tal entity.name.function.uxntal
@@ -69,8 +83,14 @@
 #           ^^^^^^^^^ source.tal comment.uxntal
 #                    ^ source.tal
 #                     ^ source.tal comment.uxntal
->BRK
+>BRK JCI JMI JSI
 #^^^ source.tal keyword.uxntal
+#   ^ source.tal
+#    ^^^ source.tal keyword.uxntal
+#       ^ source.tal
+#        ^^^ source.tal keyword.uxntal
+#           ^ source.tal
+#            ^^^ source.tal keyword.uxntal
 >LIT INC POP NIP SWP ROT DUP OVR
 #^^^ source.tal keyword.uxntal
 #   ^ source.tal
