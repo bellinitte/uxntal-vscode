@@ -91,11 +91,38 @@
                     }
                 },
                 {
-                    "comment": "Pad",
-                    "match": "(?<!\\S)(\\||\\$)(\\S*)",
+                    "comment": "Numeric padding",
+                    "match": "(?<!\\S)(\\||\\$)(?=[0-9a-f]*(?!\\S))([0-9a-f]*)",
                     "captures": {
                         "1": { "name": "punctuation.rune.uxntal" },
                         "2": { "name": "constant.numeric.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Sublabel padding",
+                    "match": "(?<!\\S)(\\||\\$)(&)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "punctuation.rune.uxntal" },
+                        "3": { "name": "entity.name.function.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Label padding",
+                    "match": "(?<!\\S)(\\||\\$)([^\\s/]*)(/)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "entity.name.function.uxntal" },
+                        "3": { "name": "punctuation.rune.uxntal" },
+                        "4": { "name": "entity.name.function.uxntal" }
+                    }
+                },
+                {
+                    "comment": "Label padding",
+                    "match": "(?<!\\S)(\\||\\$)(\\S*)",
+                    "captures": {
+                        "1": { "name": "punctuation.rune.uxntal" },
+                        "2": { "name": "entity.name.function.uxntal" }
                     }
                 },
                 {

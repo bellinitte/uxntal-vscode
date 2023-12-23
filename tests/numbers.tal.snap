@@ -139,40 +139,44 @@
 #   ^ source.tal
 #    ^ source.tal punctuation.rune.uxntal
 >
->( Runed numbers can have arbitrary "digits" )
+>( Literal numbers can have arbitrary "digits" )
 #^ source.tal comment.uxntal
 # ^ source.tal
-#  ^^^^^ source.tal comment.uxntal
-#       ^ source.tal
-#        ^^^^^^^ source.tal comment.uxntal
-#               ^ source.tal
-#                ^^^ source.tal comment.uxntal
-#                   ^ source.tal
-#                    ^^^^ source.tal comment.uxntal
-#                        ^ source.tal
-#                         ^^^^^^^^^ source.tal comment.uxntal
-#                                  ^ source.tal
-#                                   ^^^^^^^^ source.tal comment.uxntal
-#                                           ^ source.tal
-#                                            ^ source.tal comment.uxntal
->#x!@ ## 
+#  ^^^^^^^ source.tal comment.uxntal
+#         ^ source.tal
+#          ^^^^^^^ source.tal comment.uxntal
+#                 ^ source.tal
+#                  ^^^ source.tal comment.uxntal
+#                     ^ source.tal
+#                      ^^^^ source.tal comment.uxntal
+#                          ^ source.tal
+#                           ^^^^^^^^^ source.tal comment.uxntal
+#                                    ^ source.tal
+#                                     ^^^^^^^^ source.tal comment.uxntal
+#                                             ^ source.tal
+#                                              ^ source.tal comment.uxntal
+>#0x #x!@ ##
 #^ source.tal punctuation.rune.uxntal
-# ^^^ source.tal constant.numeric.uxntal
-#    ^ source.tal
-#     ^ source.tal punctuation.rune.uxntal
-#      ^ source.tal constant.numeric.uxntal
-#       ^^ source.tal
->|x!@ || 
+# ^^ source.tal constant.numeric.uxntal
+#   ^ source.tal
+#    ^ source.tal punctuation.rune.uxntal
+#     ^^^ source.tal constant.numeric.uxntal
+#        ^ source.tal
+#         ^ source.tal punctuation.rune.uxntal
+#          ^ source.tal constant.numeric.uxntal
+>
+>( Paddings cannot )
+#^ source.tal comment.uxntal
+# ^ source.tal
+#  ^^^^^^^^ source.tal comment.uxntal
+#          ^ source.tal
+#           ^^^^^^ source.tal comment.uxntal
+#                 ^ source.tal
+#                  ^ source.tal comment.uxntal
+>|0x0
 #^ source.tal punctuation.rune.uxntal
-# ^^^ source.tal constant.numeric.uxntal
-#    ^ source.tal
-#     ^ source.tal punctuation.rune.uxntal
-#      ^ source.tal constant.numeric.uxntal
-#       ^^ source.tal
->$x!@ $$
+# ^^^ source.tal entity.name.function.uxntal
+>$0x0
 #^ source.tal punctuation.rune.uxntal
-# ^^^ source.tal constant.numeric.uxntal
-#    ^ source.tal
-#     ^ source.tal punctuation.rune.uxntal
-#      ^ source.tal constant.numeric.uxntal
+# ^^^ source.tal entity.name.function.uxntal
 >
